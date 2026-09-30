@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.pytest_json_report*
+
+# secrets — NEVER commit keys
+.env
+*.key
+github_token.txt
+
+# heavy raw fetch cache (keep in local backup, not git)
+data/raw/fandom/
+data/raw/wikisource_cache/
+data/inbox/
+
+# training artifacts (generated locally)
+runs/
+*.gguf
+*.safetensors
+checkpoints/
+
+# OS junk
+.DS_Store
+Thumbs.db

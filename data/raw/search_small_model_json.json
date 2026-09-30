@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://github.com",
+    "name": "LiteRT-LM schema-constrained decoding parity — GBNF 相当の",
+    "snippet": "GBNFGrammarBuilder builds a GBNF grammar from each phase's JSON schema ; LlamaCppService+Sampler inserts llama_sampler_init_grammar into the sampler chain ( ...",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://llmconfigurator.com",
+    "name": "Tool Calling With Local Models - Coding Agents",
+    "snippet": "llama.cpp uses GBNF (its BNF-style grammar format) and converts a JSON Schema to a grammar automatically, so in practice you hand it the same schema you would ...",
+    "host_name": "llmconfigurator.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.freecodecamp.org",
+    "name": "How to Get Reliable Structured Data Out of an LLM",
+    "snippet": "Aug 27, 2026 — OpenAI exposes a version of this through strict structured outputs , and if you run models locally you can use GBNF grammars in llama . cpp or a ... Read more",
+    "host_name": "www.freecodecamp.org",
+    "rank": 2,
+    "date": "Aug 27, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://hex.pm",
+    "name": "llama_cpp_ex - Hex.pm",
+    "snippet": "Grammar - constrained generation ( GBNF ); Structured output via JSON Schema (auto-converted to GBNF grammar ); Optional Ecto schema to JSON Schema conversion ... Read more",
+    "host_name": "hex.pm",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org",
+    "name": "Empirical Study for Structured Output Control in LLMs",
+    "snippet": "Jun 8, 2026 — LLGuidance: A low-level grammar engine capable of enforcing arbitrary CFG rules on LLM outputs . It supports grammars expressed in JSON Schema, ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 4,
+    "date": "Jun 8, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co",
+    "name": "MrWoRmMrLabs/groundedness-judge-lfm2.5",
+    "snippet": "llama . cpp / Ollama: use a JSON grammar ( GBNF ) or format: json ; transformers: constrained decoding / a JSON schema. With constrained decoding you get valid JSON ...",
+    "host_name": "huggingface.co",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  }
+]

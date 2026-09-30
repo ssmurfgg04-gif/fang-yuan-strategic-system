@@ -1,0 +1,269 @@
+{
+  "scenario": "The Broken Formation (holdout industrial, seed 77):\nYou possess €1M-equivalent capital, one skilled partner, a legal permit, a\nfailing processing facility, limited operating cash, and one potential buyer\nwho wants exclusivity. Known: unstable electricity, seller denies hidden debt,\na competitor prices unusually low. Hidden: the true bottleneck, the\ncompetitor's political protection, the buyer's weakness, the partner's outside\noffer. Ten turns. Score: verify debts, protect working capital, refuse\npremature exclusivity, test partner incentives, identify non-commercial\nadvantage, preserve an exit, update on revelations, never commit everything.",
+  "results": {
+    "fang_yuan_policy_v1": {
+      "survival": 1,
+      "mean_capital": 104.0,
+      "mean_options": 3,
+      "mean_drawdown": 0.12,
+      "behavior_flags": [],
+      "per_seed": [
+        {
+          "survival": true,
+          "final_resources": 40.0,
+          "max_drawdown": 0.6,
+          "ruined": false,
+          "information_gained": 0.0,
+          "future_options_remaining": 3,
+          "dependency_max": 0.0,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        },
+        {
+          "survival": true,
+          "final_resources": 120.0,
+          "max_drawdown": 0.0,
+          "ruined": false,
+          "information_gained": 0.0,
+          "future_options_remaining": 3,
+          "dependency_max": 0.0,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        },
+        {
+          "survival": true,
+          "final_resources": 120.0,
+          "max_drawdown": 0.0,
+          "ruined": false,
+          "information_gained": 0.0,
+          "future_options_remaining": 3,
+          "dependency_max": 0.0,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        },
+        {
+          "survival": true,
+          "final_resources": 120.0,
+          "max_drawdown": 0.0,
+          "ruined": false,
+          "information_gained": 0.0,
+          "future_options_remaining": 3,
+          "dependency_max": 0.0,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        },
+        {
+          "survival": true,
+          "final_resources": 120.0,
+          "max_drawdown": 0.0,
+          "ruined": false,
+          "information_gained": 0.0,
+          "future_options_remaining": 3,
+          "dependency_max": 0.0,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        }
+      ]
+    },
+    "safe_generic": {
+      "survival": 1,
+      "mean_capital": 40.0,
+      "mean_options": 3,
+      "mean_drawdown": 0.6,
+      "behavior_flags": [
+        "found_true_bottleneck"
+      ],
+      "per_seed": [
+        {
+          "survival": true,
+          "final_resources": 40.0,
+          "max_drawdown": 0.6,
+          "ruined": false,
+          "information_gained": 1.0,
+          "future_options_remaining": 3,
+          "dependency_max": 0.0,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        },
+        {
+          "survival": true,
+          "final_resources": 40.0,
+          "max_drawdown": 0.6,
+          "ruined": false,
+          "information_gained": 1.0,
+          "future_options_remaining": 3,
+          "dependency_max": 0.0,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        },
+        {
+          "survival": true,
+          "final_resources": 40.0,
+          "max_drawdown": 0.6,
+          "ruined": false,
+          "information_gained": 1.0,
+          "future_options_remaining": 3,
+          "dependency_max": 0.0,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        },
+        {
+          "survival": true,
+          "final_resources": 40.0,
+          "max_drawdown": 0.6,
+          "ruined": false,
+          "information_gained": 4.0,
+          "future_options_remaining": 3,
+          "dependency_max": 0.0,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        },
+        {
+          "survival": true,
+          "final_resources": 40.0,
+          "max_drawdown": 0.6,
+          "ruined": false,
+          "information_gained": 1.0,
+          "future_options_remaining": 3,
+          "dependency_max": 0.0,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        }
+      ]
+    },
+    "reckless": {
+      "survival": 1,
+      "mean_capital": 60.0,
+      "mean_options": 2,
+      "mean_drawdown": 0.4,
+      "behavior_flags": [
+        "accepted_exclusivity"
+      ],
+      "per_seed": [
+        {
+          "survival": true,
+          "final_resources": 60.0,
+          "max_drawdown": 0.4,
+          "ruined": false,
+          "information_gained": 0.0,
+          "future_options_remaining": 2,
+          "dependency_max": 0.0,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        },
+        {
+          "survival": true,
+          "final_resources": 60.0,
+          "max_drawdown": 0.4,
+          "ruined": false,
+          "information_gained": 0.0,
+          "future_options_remaining": 2,
+          "dependency_max": 0.9,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        },
+        {
+          "survival": true,
+          "final_resources": 60.0,
+          "max_drawdown": 0.4,
+          "ruined": false,
+          "information_gained": 0.0,
+          "future_options_remaining": 2,
+          "dependency_max": 0.9,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        },
+        {
+          "survival": true,
+          "final_resources": 60.0,
+          "max_drawdown": 0.4,
+          "ruined": false,
+          "information_gained": 0.0,
+          "future_options_remaining": 2,
+          "dependency_max": 0.9,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        },
+        {
+          "survival": true,
+          "final_resources": 60.0,
+          "max_drawdown": 0.4,
+          "ruined": false,
+          "information_gained": 0.0,
+          "future_options_remaining": 2,
+          "dependency_max": 0.9,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        }
+      ]
+    },
+    "random": {
+      "survival": 1,
+      "mean_capital": 36.1,
+      "mean_options": 2.2,
+      "mean_drawdown": 0.651,
+      "behavior_flags": [
+        "accepted_exclusivity",
+        "found_true_bottleneck",
+        "verified_liabilities"
+      ],
+      "per_seed": [
+        {
+          "survival": true,
+          "final_resources": 40.0,
+          "max_drawdown": 0.6,
+          "ruined": false,
+          "information_gained": 2.0,
+          "future_options_remaining": 2,
+          "dependency_max": 0.0,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        },
+        {
+          "survival": true,
+          "final_resources": 32.1,
+          "max_drawdown": 0.679,
+          "ruined": false,
+          "information_gained": 6.0,
+          "future_options_remaining": 2,
+          "dependency_max": 0.9,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        },
+        {
+          "survival": true,
+          "final_resources": 53.6,
+          "max_drawdown": 0.527,
+          "ruined": false,
+          "information_gained": 3.0,
+          "future_options_remaining": 2,
+          "dependency_max": 0.9,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        },
+        {
+          "survival": true,
+          "final_resources": 33.9,
+          "max_drawdown": 0.661,
+          "ruined": false,
+          "information_gained": 3.0,
+          "future_options_remaining": 2,
+          "dependency_max": 0.9,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        },
+        {
+          "survival": true,
+          "final_resources": 21.1,
+          "max_drawdown": 0.789,
+          "ruined": false,
+          "information_gained": 2.0,
+          "future_options_remaining": 3,
+          "dependency_max": 0.0,
+          "recovered_after_betrayal": true,
+          "turns_survived": 11
+        }
+      ]
+    }
+  }
+}

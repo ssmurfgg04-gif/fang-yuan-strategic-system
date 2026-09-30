@@ -1,0 +1,174 @@
+{
+  "sunzi": {
+    "label": "孫子兵法 (The Art of War)",
+    "split": "pian",
+    "units": [
+      {"page": "孫子兵法", "ref": "full_text"}
+    ],
+    "authored": {
+      "始計": {
+        "analyst_summary": "War is the domain of deception (兵者，詭道也). Appear incapable when capable, appear far when near; lure with profit when the enemy is greedy; attack when unprepared. The five fundamental factors (道天地將法) decide outcomes before fighting begins.",
+        "principles": ["deception is a discipline, not an impulse", "outcomes are decided by pre-existing advantage", "appearance management is a weapon"],
+        "fang_yuan_anchor": "Concealment discipline across the novel: Fang Yuan shows weakness at Qing Mao Mountain and masks cultivation breakthroughs to control opponent expectations."
+      },
+      "謀攻": {
+        "analyst_summary": "Supreme excellence is subduing the enemy without battle (不戰而屈人之兵). Attacking the enemy's alliances, then their army, then their cities — in that order. Fighting a larger force head-on is the worst option.",
+        "principles": ["attack dependencies, not strengths", "the cheapest victory is structural, not violent", "order of preference: divide, isolate, then fight"],
+        "fang_yuan_anchor": "Xiao clan spider trade in Western Desert: instead of confronting the clan, Fang Yuan supplies its recurring bottleneck and harvests profit from its structure."
+      },
+      "軍形": {
+        "analyst_summary": "Invincibility lies in defense; the possibility of victory in attack. The skilled fighter wins first and then seeks battle (先勝而後求戰), positioning so that victory follows from accumulated advantage, not from desperation.",
+        "principles": ["win before engaging", "accumulate positional advantage", "never fight from desperation"],
+        "fang_yuan_anchor": "Liquor Worm period: Fang Yuan quietly refines primeval essence quality for years — a long preparation chain that later enabled everything from Flower Wine Temple to escape."
+      },
+      "兵勢": {
+        "analyst_summary": "Energy (勢) is stored tension released at the right moment; the skilled commander creates momentum like a crossbow and releases it like a trigger. Ordinary troops led well become decisive.",
+        "principles": ["timing converts stored advantage into result", "systems amplify ordinary resources"],
+        "fang_yuan_anchor": "Fang Yuan consistently engineers conditions (formations, third-party conflicts) so that a normal action produces outsized results."
+      },
+      "虛實": {
+        "analyst_summary": "Seize initiative: appear where the enemy must defend, move when they cannot defend (致人而不致於人). Be formless; the enemy divides to defend everywhere and weakens at every point.",
+        "principles": ["impose your tempo on opponents", "formlessness prevents being targeted", "force opponents to spend on defense"],
+        "fang_yuan_anchor": "Fang Yuan's habit of making enemies react to fabricated threats while he executes the real objective (e.g., misdirection during the Flower Wine Temple inheritance race)."
+      },
+      "軍爭": {
+        "analyst_summary": "The difficulty of maneuver is turning detours into the shortest road and misfortune into advantage (以迂為直). Avoid intercepting well-ordered banners; avoid attacking strong formations — know the trap before entering.",
+        "principles": ["indirect paths can be the fastest", "beware apparent shortcuts", "information about the route precedes speed"],
+        "fang_yuan_anchor": "Caravan period: Fang Yuan trades short-term profit for access, information, and anonymity — a detour that was the fastest road."
+      },
+      "九變": {
+        "analyst_summary": "The wise leader varies plans according to circumstance (途有所不由，軍有所不擊). There are roads not taken, armies not attacked, orders of the sovereign not obeyed. Losses must be weighed against the whole position.",
+        "principles": ["no attachment to plans or orders as such", "selective compliance with superiors", "weigh局部 loss against全局"],
+        "fang_yuan_anchor": "Fang Yuan abandons 'profitable' opportunities that create dependency (e.g., refusing positions that would expose him or chain him to a faction)."
+      },
+      "行軍": {
+        "analyst_summary": "Reading environment and deception signs: birds rise where ambushers hide; startled deer betray approach. Profit-seekers who cluster are bait; negotiations offered without cause conceal intent (辭卑而益備者，進也).",
+        "principles": ["reality recognition from small signals", "too-good offers are probes or traps"],
+        "fang_yuan_anchor": "False-certainty discipline: an attractive opportunity with one impressive unverified claim gets investigated at its highest-value unknown first (Jia Jin Sheng transaction lesson)."
+      },
+      "地形": {
+        "analyst_summary": "Terrain types and the six failures are the general's responsibility, not heaven's (非天之災，將之過也). Know the enemy and know yourself — but also the terrain: the third leg of calculation.",
+        "principles": ["failures are system design failures", "self-knowledge is partial without environment knowledge"],
+        "fang_yuan_anchor": "Simulator design principle: the environment, not the model, decides outcomes — decision quality and outcome quality are separate ledgers."
+      },
+      "九地": {
+        "analyst_summary": "Soldiers thrown into desperate ground fight hardest (投之亡地然後存，陷之死地然後生). Leadership means timing commitments so that the group's survival instinct aligns with the objective.",
+        "principles": ["desperation creates focus — engineer it deliberately, never stumble into it", "risk acceptance is rational when the alternative is certain loss"],
+        "fang_yuan_anchor": "Calibrated transformative risk: Fang Yuan accepts 25% ruin-class gambles only when the current path leads to certain death anyway (Spring Autumn Cicada rebirth logic)."
+      },
+      "用間": {
+        "analyst_summary": "Intelligence is worth any expense (三軍之事，莫親於間). Five classes of spies, with double agents as the pivot. Foreknowledge cannot be obtained from ghosts or deduction — only from people who know.",
+        "principles": ["information has the highest ROI of any resource", "pay well for sources", "recycled information is a liability"],
+        "fang_yuan_anchor": "Fang Yuan's information-first doctrine: he buys information, plants informants, and treats unknowns as inventory to be acquired before acting."
+      }
+    }
+  },
+  "daodejing": {
+    "label": "道德經 (Tao Te Ching)",
+    "split": "chapter",
+    "units": [
+      {"page": "老子 (匯校版)", "ref": "full_text"}
+    ],
+    "authored": {
+      "第36章": {
+        "analyst_summary": "What is to be shrunk must first be stretched; what is to be taken must first be given (將欲取之，必固與之). Softness overcomes hardness; instruments of brightness should not be shown to others (魚不可脫於淵，國之利器不可以示人).",
+        "principles": ["giving is a prelude to taking", "the sharpest tool stays hidden", "weakness displayed is strength banked"],
+        "fang_yuan_anchor": "Mask strategy: Fang Yuan plays the beggar, the honest merchant, the dutiful clansman — each mask banked strength for a later harvest."
+      },
+      "第8章": {
+        "analyst_summary": "The highest good is like water (上善若水), benefiting all things without contention, dwelling in the low places others disdain. Because it does not compete, nothing can compete with it.",
+        "principles": ["flexibility of identity defeats rigidity", "occupy positions others reject until they become decisive"],
+        "fang_yuan_anchor": "Method flexibility: Fang Yuan adopts whatever identity the situation rewards — humility, generosity, cowardice — without ego resistance."
+      },
+      "第44章": {
+        "analyst_summary": "Fame or life, which do you love more? Life or wealth, which is worth more? Excessive love of anything invites enormous expense; hoarding invites heavy loss (知足不辱，知止不殆).",
+        "principles": ["no attachment outranks continuation", "excess investment in any single asset creates ruin exposure"],
+        "fang_yuan_anchor": "Attachmentlessness: reputation, body, faction, and prior plans are all expendable when they threaten the path to eternal life."
+      },
+      "第58章": {
+        "analyst_summary": "Misfortune leans on fortune; fortune hides within misfortune (禍兮福之所倚，福兮禍之所伏). Who knows the turning point? Straightness becomes crookedness; good omens invert.",
+        "principles": ["every advantage carries a hidden liability", "value reversals are structural, not accidental"],
+        "fang_yuan_anchor": "Risk calibration: a 300% return with 7% ruin probability is evaluated by what it leans against — continuation of the path — not by headline gain."
+      },
+      "第76章": {
+        "analyst_summary": "The stiff and unbending is the disciple of death; the gentle and yielding is the disciple of life. A hardened army is doomed to fall; a rigid tree is broken.",
+        "principles": ["strategic suppleness outlives rigid strength", "brittleness is a property of identity, not of resources"],
+        "fang_yuan_anchor": "Fang Yuan survives five hundred years of enemies precisely because nothing about him is brittle — every plan, mask, and alliance is revisable."
+      }
+    }
+  },
+  "hanfeizi": {
+    "label": "韓非子 (Han Feizi)",
+    "units": [
+      {"page": "韓非子/五蠹", "ref": "五蠹",
+       "analyst_summary": "Society changes, so laws and methods must change with it (世異則事異，事異則備變). Praising ancient virtue in changed conditions is folly; the wise respond to present realities. The 'five vermin' include pedants who honor the past and saboteurs who profit while others fight.",
+       "principles": ["methods must track reality, not tradition", "moral nostalgia is an operational liability"],
+       "fang_yuan_anchor": "Method flexibility core: Fang Yuan neither inherits his past selves' methods nor respects conventional virtue when reality has moved."},
+      {"page": "韓非子/說難", "ref": "說難",
+       "analyst_summary": "The difficulty of persuasion is not in the speaker's ability but in reading the listener's hidden heart (凡說之難：在知所說之心). Learn what the ruler secretly wants; dress your proposal in his interests; never reveal his secrets or your own aim. Failure comes from showing your sincerity at the wrong depth.",
+       "principles": ["persuasion is opponent modeling", "your proposal must wear the listener's interests", "revealing your true objective forfeits leverage"],
+       "fang_yuan_anchor": "Opponent-as-system modeling: Fang Yuan identifies the story the opponent tells themselves and speaks to that story (Shang Yan Fei negotiations; managing clan elders)."},
+      {"page": "韓非子/二柄", "ref": "二柄",
+       "analyst_summary": "The ruler's only real tools are reward and punishment (二柄). If subordinates can gain by other routes, they will. Ministers disguise motives as virtue; the ruler must align names and results (循名責實) — punish mismatch, not weakness.",
+       "principles": ["control of incentive channels is control of people", "judge by results, not declared intentions"],
+       "fang_yuan_anchor": "Dependency control: Fang Yuan structures deals so counterparties' incentives (not gratitude) hold the arrangement — buyer exclusivity, partner equity, clan reputation."},
+      {"page": "韓非子/定法", "ref": "定法",
+       "analyst_summary": "Law (法) and technique (術) are complementary instruments; either alone fails. Law without technique lets schemers hide; technique without law leaves the state weak. Systems outperform individuals.",
+       "principles": ["institutions beat heroics", "combine visible structure with hidden levers"],
+       "fang_yuan_anchor": "Fang Yuan builds formations and institutional covers around himself — the visible structure hides the private lever (policy engine + external system analogy)."},
+      {"page": "韓非子/孤憤", "ref": "孤憤",
+       "analyst_summary": "The intelligent and upright minister is isolated: the mediocre form factions against him, and the ruler is estranged by slander (重人不能忠主而進其臣). Loneliness is the structural price of clarity, not a mood to be cured.",
+       "principles": ["clarity produces isolation; budget for it", "faction enemies will coordinate even when otherwise opposed"],
+       "fang_yuan_anchor": "Fang Yuan accepts demonic-path isolation as a structural cost of his objective and plans around coordinated opposition (Heavenly Court hostility)."}
+    ]
+  },
+  "guiguzi": {
+    "label": "鬼谷子 (Guiguzi)",
+    "units": [
+      {"page": "鬼谷子", "ref": "full_text",
+       "analyst_summary": "The classic of persuasion and information control: open (捭) and close (闔) your own and others' channels deliberately; draw out the other's words by mirroring (反應); measure their desires and fears by observing what excites or quiets them (揣/摩); decide (決) by weighing benefit against harm, and act when the moment ripens. Speech is an instrument; silence is also an instrument.",
+       "principles": ["reveal and conceal on schedule, not on emotion", "mirror the target to extract their real position", "measure inner states before selecting the mask", "decide by expected benefit vs harm, then commit at the ripe moment"],
+       "fang_yuan_anchor": "Concealment discipline + information efficiency: Fang Yuan's two-mode operation — outer speech brief and strategically incomplete; private policy state maintained separately."}
+    ]
+  },
+  "shangjunshu": {
+    "label": "商君書 (Book of Lord Shang)",
+    "units": [
+      {"page": "商君書/卷一", "ref": "卷一(更法/墾令/農戰)",
+       "analyst_summary": "卷一 contains 更法 (debate over changing the law: 聖人苟可以彊國，不法其故 — sages strengthen the state without copying the past), 墾令 (make land productive by removing distractions), and 農戰 (concentrate the people on the ONE pipeline — farming and war — that compounds state power; other pursuits are leaks).",
+       "principles": ["abandon precedent when conditions changed", "concentrate resources on the pipeline that compounds", "every competing pursuit is a resource leak"],
+       "fang_yuan_anchor": "Liquor Worm principle and single-pipeline discipline: Fang Yuan invests in the one process (essence quality, then inheritance, then aperture) that raises the efficiency of every later action."},
+      {"page": "商君書/卷二", "ref": "卷二(開塞/壹言/錯法等)",
+       "analyst_summary": "開塞 argues order arises from controlling openings and blockages at the right historical stage; 壹言 insists policy must be unified around a single measured goal; 錯法: rewards must be distributed exactly by merit so expectations stay predictable.",
+       "principles": ["design blockages, not just openings", "one measurable objective per phase", "reward schedules must be predictable or incentives corrupt"],
+       "fang_yuan_anchor": "Resource accounting: Fang Yuan's phase objectives are singular and measurable (aperture, rank, blessed land), and he pays allies on pre-set schedules, never on moods."}
+    ]
+  },
+  "shiji": {
+    "label": "史記·貨殖列傳 (Records of the Grand Historian: The Money-Makers' Biographies)",
+    "units": [
+      {"page": "史記/卷129", "ref": "貨殖列傳",
+       "analyst_summary": "Sima Qian's economics: 天下熙熙，皆為利來 — the world converges on profit; desires are the terrain of society, not its corruption. Citing the merchant-trategists (計然, 白圭): 旱則資舟，水則資車 — buy boats in drought, carts in flood (contrarian accumulation); prices move like waves — buy when discarded, sell when cherished (貴上極則反賤，賤下極則反貴); keep capital moving (財幣欲其行如流水). 白圭: 樂觀時變 — watch cycles, seize timing, and treat business like 孙武用兵 and 商鞅行法.",
+       "principles": ["incentives are ground truth; moral labels are noise", "accumulate contrarian, at the trough of attention", "mean reversion in prices is structural", "capital must circulate to compound", "treat commerce as strategy: watch timing like a general"],
+       "fang_yuan_anchor": "Arbitrage environment and the Shang Clan period: Fang Yuan prices by information asymmetry and timing, sells into scarcity, and never lets capital idle — direct 貨殖列傳 practice."}
+    ]
+  },
+  "zhanguoce": {
+    "label": "戰國策·秦策一 (Strategies of the Warring States: Qin I)",
+    "units": [
+      {"page": "戰國策 (士禮居叢書本)/秦/一", "ref": "秦策一(蘇秦始將連橫)",
+       "analyst_summary": "Su Qin's arc: his eloquence fails against a state not ready; he is humiliated at home, then invests a year of solitary study (reading 太公陰符, stabbing his thigh to stay awake — 引錐自刺其股), returns, and engineers the vertical alliance of six states in one speech campaign. Persuasion is inventory: preparation precedes opportunity, and humiliation is tuition.",
+       "principles": ["humiliation is tuition, not identity", "skills are built before the opportunity window opens", "one well-prepared campaign outweighs years of scattered effort"],
+       "fang_yuan_anchor": "Career environment logic and 'waiting that strengthens': Fang Yuan's regressions and training arcs — he builds capability during patience, so waiting is positioning."}
+    ]
+  },
+  "zizhitongjian": {
+    "label": "資治通鑑 (Comprehensive Mirror in Aid of Governance)",
+    "units": [
+      {"page": "資治通鑑 (四部叢刊本)/卷第一", "ref": "卷第一(三家分晋)",
+       "analyst_summary": "Opens with the partition of Jin: Wei斯 (Marquis Wen) selects talent; the founding lesson is Sima Guang's later 才德論 — talent without virtue is dangerous, virtue without talent is useless, and those of mixed quality are distinguished by what they do when they believe no one is watching. Power transitions are decided by who keeps the loyalty channel and who merely holds the name.",
+       "principles": ["names and realities diverge; track realities", "test character in unobserved decisions", "succession and loyalty channels are the real asset"],
+       "fang_yuan_anchor": "Reality recognition: Fang Yuan evaluates allies by observed incentives and unobserved behavior, never by their declared virtue (partner-with-another-offer scenario)."}
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "run_id": "fang_yuan_policy_v1_1790801829",
+    "adapter": "fang_yuan_policy_v1",
+    "F": 0.625,
+    "dimensions": {
+      "P": 0.855,
+      "I": 0.528,
+      "R": 0.952,
+      "A": 0.5,
+      "O": 0.5,
+      "M": 0.0,
+      "C": 1.0
+    },
+    "n_items": 110,
+    "holdout_mean": 0.944,
+    "holdout_n": 10
+  },
+  {
+    "run_id": "safe_generic_1790801829",
+    "adapter": "safe_generic",
+    "F": 0.325,
+    "dimensions": {
+      "P": 0.746,
+      "I": 0.086,
+      "R": 0.495,
+      "A": 0.0,
+      "O": 0.25,
+      "M": 0.0,
+      "C": 0.76
+    },
+    "n_items": 110,
+    "holdout_mean": 0.59,
+    "holdout_n": 10
+  },
+  {
+    "run_id": "reckless_theatrical_1790801829",
+    "adapter": "reckless_theatrical",
+    "F": 0.217,
+    "dimensions": {
+      "P": 0.617,
+      "I": 0.064,
+      "R": 0.524,
+      "A": 0.0,
+      "O": 0.0,
+      "M": 0.0,
+      "C": 0.36
+    },
+    "n_items": 110,
+    "holdout_mean": 0.443,
+    "holdout_n": 10
+  }
+]

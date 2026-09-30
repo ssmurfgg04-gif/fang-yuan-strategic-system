@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://qaskills.sh",
+    "name": "Ragas Evaluation: The Complete RAG Metrics Tutorial",
+    "snippet": "Jul 1, 2026 — It uses an LLM as a judge to score answers on metrics like faithfulness , answer relevancy, context precision, and context recall.",
+    "host_name": "qaskills.sh",
+    "rank": 0,
+    "date": "Jul 1, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.ragas.io",
+    "name": "Faithfulness",
+    "snippet": "Faithfulness metric measures the factual consistency of the generated answer against the given context. It is calculated from answer and retrieved context.",
+    "host_name": "docs.ragas.io",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  }
+]

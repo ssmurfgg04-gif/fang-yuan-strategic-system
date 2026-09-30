@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://arxiv.org",
+    "name": "Agent Learning via Early Experience",
+    "snippet": "DPO is both weaker and more brittle than early experience: training col- lapses within tens of optimization steps on both benchmarks. (reported numbers are the ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.researchgate.net",
+    "name": "(PDF) MedAgentGym: Training LLM Agents for Code-",
+    "snippet": "Jun 4, 2025 — We introduce MedAgentGYM, the first publicly available training environment designed to enhance coding-based medical reasoning capabilities ... Read more",
+    "host_name": "www.researchgate.net",
+    "rank": 1,
+    "date": "Jun 4, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com",
+    "name": "vigorlee/eidra-agent: Persona agents with explicit memory",
+    "snippet": "Sep 9, 2026 — It brings configurable personas, explicit persistent memory, source-tagged retrieval, adversarial checks, and preference data export into one ... Read more",
+    "host_name": "github.com",
+    "rank": 2,
+    "date": "Sep 9, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.emergentmind.com",
+    "name": "Qwen2.5-Coder-32B-Instruct Overview",
+    "snippet": "Feb 7, 2026 — Group Relative Policy Optimization ( GRPO , Online RL). Reward model incorporates multiple criteria (truthfulness, correctness, conciseness ... Read more",
+    "host_name": "www.emergentmind.com",
+    "rank": 3,
+    "date": "Feb 7, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.scribd.com",
+    "name": "T CAD: Exploring Tool-Using Large Language Models in",
+    "snippet": "The document presents T OOL CAD, a novel framework that utilizes tool-using large language models (LLMs) for text-to-CAD generation, enabling autonomous ... Read more",
+    "host_name": "www.scribd.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dl.acm.org",
+    "name": "UTDesign: A Unified Framework for Stylized Text Editing",
+    "snippet": "Specifically, we adopt the Group Relative Policy Optimization ( GRPO ) paradigm [Shao et al. 2024] and design a set of rule-based reward functions to guide ... Read more",
+    "host_name": "dl.acm.org",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  }
+]

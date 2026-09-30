@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://blog.mikegchambers.com",
+    "name": "I Trained Qwen to Talk Like a Pirate - Got It Right Second Time",
+    "snippet": "Mar 11, 2026 — I fine - tuned Qwen2.5-0.5B to always talk like a pirate using LoRA . The first attempt failed because of a system prompt in the training data . Read more",
+    "host_name": "blog.mikegchambers.com",
+    "rank": 0,
+    "date": "Mar 11, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://apxml.com",
+    "name": "Practice: Full Fine-Tuning on a Small-Scale Model",
+    "snippet": "We will use the Qwen/ Qwen2.5-0.5B model, The dataset will be a small subset of squad , a questions and answers based on reading passages. datasets helps manage ...",
+    "host_name": "apxml.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org",
+    "name": "A Technical Study into 0.5B Reasoning Language Models",
+    "snippet": "Jun 20, 2025 — For full fine - tuning , we set the learning rate to 4.0e-05 and train for 4 epochs with a maximum sequence length of 8192. For LoRA -based training ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 2,
+    "date": "Jun 20, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co",
+    "name": "manbeast3b/qwen2.5-0.5b-text-classification",
+    "snippet": "This model is a fine - tuned version of Qwen/ Qwen2.5-0.5B -Instruct using LoRA (Low-Rank Adaptation) for text classification tasks. ( learning rate , batch size , ...",
+    "host_name": "huggingface.co",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.stackademic.com",
+    "name": "Fine Tuning LLM with LoRA",
+    "snippet": "Jan 24, 2026 — Qwen/Qwen2.5-0.5B is used for this demonstration, as its smaller size (0.5 billion parameters) makes it ideal for learning purposes. However ... Read more",
+    "host_name": "blog.stackademic.com",
+    "rank": 4,
+    "date": "Jan 24, 2026",
+    "favicon": ""
+  }
+]
