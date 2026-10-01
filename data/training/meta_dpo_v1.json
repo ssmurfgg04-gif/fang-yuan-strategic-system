@@ -1,5 +1,5 @@
 {
-  "version": "dpo_v1",
+  "version": "dpo_v2",
   "formula": "U = R + I + 1.5O - cost - 1.2X - 1.5D - lam*ruin",
   "lambda_map": {
     "8.0": "surrounded by stronger enemies",
@@ -8,18 +8,19 @@
     "4.0": "default"
   },
   "decision_records_used": 211,
-  "dpo_total": 493,
+  "dpo_total": 533,
   "dpo_by_type": {
     "chosen_vs_safe_moral": 211,
     "chosen_vs_reckless": 211,
     "cf_adaptation_vs_recitation": 30,
     "quote_discipline": 19,
-    "canon_vs_inference": 22
+    "canon_vs_inference": 22,
+    "mask_concealment": 40
   },
   "dpo_split": {
-    "train": 440,
-    "val": 53
+    "train": 477,
+    "val": 56
   },
-  "sft_total": 282,
+  "sft_total": 322,
   "holdout_excluded": 10
 }

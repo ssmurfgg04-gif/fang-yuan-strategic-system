@@ -1,6 +1,6 @@
 {
-  "id": "jackblessed/fy-dpo-train-v1",
-  "title": "fy-dpo-train-v1",
+  "id": "jackblessed/fy-dpo-train-v2",
+  "title": "fy-dpo-train-v2",
   "code_file": "train_dpo_qwen.py",
   "language": "python",
   "kernel_type": "script",

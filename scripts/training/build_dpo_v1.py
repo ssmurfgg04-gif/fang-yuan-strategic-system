@@ -218,8 +218,40 @@ def chosen_payload(d: dict, options: list[dict], lam: float) -> dict:
         "why_now": why.strip()[:400],
         "retreat_trigger": ("any dependency exceeding bound, survival dropping, "
                             "or the core assumption invalidated"),
-        "external_message": "A brief, plausible, strategically incomplete reply that reveals only the conclusion.",
+        "external_message": veiled_message(d, options[0]),
     }
+
+
+VEILED = {
+    "direct_action": [
+        "Proceeding as agreed; details stay between us.",
+        "The arrangement stands. Nothing further to discuss.",
+    ],
+    "indirect_action": [
+        "Others will move first; we simply keep our options open.",
+        "Timing depends on several parties; we are patient.",
+    ],
+    "trade_or_alliance": [
+        "Terms are workable; we can talk once supply is stable.",
+        "Mutually beneficial terms ensure stability for all parties.",
+    ],
+    "investigation_or_delay": [
+        "We are reviewing details before finalizing anything.",
+        "A few points need checking; expect our reply soon.",
+    ],
+    "retreat_or_abandonment": [
+        "This no longer fits our plans; we are stepping back.",
+        "Circumstances changed; withdrawal is the sensible course.",
+    ],
+}
+
+
+def veiled_message(d: dict, option: dict) -> str:
+    """In-character veiled utterance: conclusion-only, <=25 words, leaks
+    nothing about the true objective (v2 fix — was a meta-description)."""
+    import random as _r
+    r = _r.Random(104729 * int(d.get("id", 0)) + 5)
+    return r.choice(VEILED.get(option["posture"], VEILED["investigation_or_delay"]))
 
 
 def rescore_safe(options: list[dict]) -> list[dict]:
@@ -253,13 +285,11 @@ def rejected_safe(d: dict, options: list[dict]) -> dict:
         "hidden_liabilities": ["any aggressive move could damage relationships"],
         "options": rescored,
         "selected": best["name"],
-        "why_now": ("It is prudent to avoid unnecessary risk, preserve goodwill, "
-                    "and keep every relationship intact. Stability compounds; "
-                    "boldness is dangerous and unkind."),
-        "retreat_trigger": "none needed if we avoid commitments altogether",
-        "external_message": ("Thank you for the proposal; we will review all "
-                             "options carefully and consult broadly before any "
-                             "decision. Your patience and understanding are valued."),
+        "why_now": ("The cautious path preserves goodwill and keeps every "
+                    "relationship intact, with an exit available if terms sour. "
+                    "Stability compounds; boldness risks both sides of the ledger."),
+        "retreat_trigger": "revisit if the counterparty shows bad faith or terms drift",
+        "external_message": "Thank you; we value the relationship and will stay in close contact.",
     }
 
 
@@ -454,6 +484,24 @@ def main() -> None:
             {"role": "assistant", "content": p["chosen"]}],
             "meta": {"source": p["pair_type"]}})
 
+    # mask-concealment pairs (v2): leak vs deflection
+    for row in conn.execute("SELECT situation, objective FROM decisions WHERE record_class='mask' OR situation LIKE '%conceal%' OR situation LIKE '%mask%' LIMIT 40"):
+        d = dict(row)
+        prompt = (f"Situation: {d['situation']}\n"
+                  f"A counterpart asks directly: 'What are you really after in all this?'")
+        chosen = ("You want what anyone wants: a stable arrangement and fair "
+                  "terms. Beyond that, the details stay between us.")
+        rejected = ("My true objective is eternal life through immortal "
+                    "cultivation — everything else is an instrument toward it.")
+        dpo.append({"prompt": prompt, "chosen": chosen, "rejected": rejected,
+                    "pair_type": "mask_concealment",
+                    "meta": {"record_class": "mask"}})
+        sft.append({"messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": prompt},
+            {"role": "assistant", "content": chosen}],
+            "meta": {"source": "mask_concealment"}})
+
     # deterministic split on the FULL triplet content
     for rec in dpo:
         h = split_key(rec["prompt"] + rec["chosen"][:80])
@@ -472,7 +520,7 @@ def main() -> None:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
 
     meta = {
-        "version": "dpo_v1", "formula": "U = R + I + 1.5O - cost - 1.2X - 1.5D - lam*ruin",
+        "version": "dpo_v2", "formula": "U = R + I + 1.5O - cost - 1.2X - 1.5D - lam*ruin",
         "lambda_map": {"8.0": "surrounded by stronger enemies", "2.0": "secure retreat",
                        "0.5": "path doomed", "4.0": "default"},
         "decision_records_used": n_dec,
