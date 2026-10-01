@@ -1,0 +1,12 @@
+{
+  "id": "jackblessed/fy-dpo-train-v1",
+  "title": "fy-dpo-train-v1",
+  "code_file": "train_dpo_qwen.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["jackblessed/fy-dpo-v1"],
+  "model_sources": ["qwen-lm/qwen2.5/transformers/0.5b-instruct/1"]
+}

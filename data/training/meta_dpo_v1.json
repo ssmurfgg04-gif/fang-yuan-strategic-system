@@ -1,0 +1,25 @@
+{
+  "version": "dpo_v1",
+  "formula": "U = R + I + 1.5O - cost - 1.2X - 1.5D - lam*ruin",
+  "lambda_map": {
+    "8.0": "surrounded by stronger enemies",
+    "2.0": "secure retreat",
+    "0.5": "path doomed",
+    "4.0": "default"
+  },
+  "decision_records_used": 211,
+  "dpo_total": 493,
+  "dpo_by_type": {
+    "chosen_vs_safe_moral": 211,
+    "chosen_vs_reckless": 211,
+    "cf_adaptation_vs_recitation": 30,
+    "quote_discipline": 19,
+    "canon_vs_inference": 22
+  },
+  "dpo_split": {
+    "train": 440,
+    "val": 53
+  },
+  "sft_total": 282,
+  "holdout_excluded": 10
+}
