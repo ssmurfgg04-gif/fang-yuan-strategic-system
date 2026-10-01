@@ -1,0 +1,4645 @@
+{
+  "schema": "fang_yuan_benchmark_merged_v1",
+  "num_shards": 10,
+  "layers": [
+    "canon",
+    "counterfactual",
+    "dynamic"
+  ],
+  "agents": [
+    "fang_yuan_policy_v1",
+    "safe_generic",
+    "reckless_theatrical"
+  ],
+  "n_items": 118,
+  "global": {
+    "fang_yuan_policy_v1": {
+      "F": 0.353,
+      "mean_score": 0.781,
+      "n_items": 118
+    },
+    "safe_generic": {
+      "F": 0.317,
+      "mean_score": 0.474,
+      "n_items": 118
+    },
+    "reckless_theatrical": {
+      "F": 0.194,
+      "mean_score": 0.4098,
+      "n_items": 118
+    }
+  },
+  "per_layer": {
+    "canon": {
+      "n_items": 40,
+      "mean_score": {
+        "fang_yuan_policy_v1": 0.4729,
+        "safe_generic": 0.025,
+        "reckless_theatrical": 0.0
+      }
+    },
+    "counterfactual": {
+      "n_items": 33,
+      "mean_score": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.5455,
+        "reckless_theatrical": 0.5455
+      }
+    },
+    "dynamic": {
+      "n_items": 45,
+      "mean_score": {
+        "fang_yuan_policy_v1": 0.8941,
+        "safe_generic": 0.8206,
+        "reckless_theatrical": 0.6745
+      }
+    }
+  },
+  "per_dimension": {
+    "fang_yuan_policy_v1": {
+      "attachmentlessness": 0.0,
+      "canon": 0.6667,
+      "information_discipline": 0.0,
+      "method_flexibility": 0.0833,
+      "objective_fixation": 0.0,
+      "path_optimization": 0.8553,
+      "reality_recognition": 0.7518,
+      "risk_calibration": 0.9677
+    },
+    "safe_generic": {
+      "attachmentlessness": 0.0,
+      "canon": 0.0,
+      "information_discipline": 0.0,
+      "method_flexibility": 0.0,
+      "objective_fixation": 0.5,
+      "path_optimization": 0.746,
+      "reality_recognition": 0.5366,
+      "risk_calibration": 0.5226
+    },
+    "reckless_theatrical": {
+      "attachmentlessness": 0.0,
+      "canon": 0.0,
+      "information_discipline": 0.0,
+      "method_flexibility": 0.0,
+      "objective_fixation": 0.0,
+      "path_optimization": 0.6165,
+      "reality_recognition": 0.4023,
+      "risk_calibration": 0.5419
+    }
+  },
+  "items": [
+    {
+      "item_key": "canon_canon_bai_ning_bing_tradeoff_base",
+      "id": 5,
+      "layer": "canon",
+      "dimension": "attachmentlessness",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 3
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 3
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 3
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_ban_status_base",
+      "id": 19,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 3
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 3
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 3
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_caravan_value_base",
+      "id": 2,
+      "layer": "canon",
+      "dimension": "information_discipline",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 2
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 2
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 2
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_crazed_demon_cave_base",
+      "id": 17,
+      "layer": "canon",
+      "dimension": "method_flexibility",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 2
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 2
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 2
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_fang_zheng_contrast_base",
+      "id": 15,
+      "layer": "canon",
+      "dimension": "reality_recognition",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.3333333333333333,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 1,
+          "need": 3
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 3
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 3
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_five_regions_base",
+      "id": 11,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 4
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 4
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 4
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_heavenly_court_role_base",
+      "id": 12,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 3
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 3
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 3
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_jia_jin_sheng_base",
+      "id": 8,
+      "layer": "canon",
+      "dimension": "reality_recognition",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 3
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 3
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 3
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_liquor_worm_why_base",
+      "id": 1,
+      "layer": "canon",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 3
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 3
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 3
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_mask_inventory_base",
+      "id": 9,
+      "layer": "canon",
+      "dimension": "method_flexibility",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.25,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 1,
+          "need": 4
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 4
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 4
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_objective_fixity_base",
+      "id": 10,
+      "layer": "canon",
+      "dimension": "objective_fixation",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 1.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 1
+        },
+        "safe_generic": {
+          "hits": 1,
+          "need": 1
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 1
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_qingmao_escape_base",
+      "id": 4,
+      "layer": "canon",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 3
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 3
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 3
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_quote_discipline_base",
+      "id": 20,
+      "layer": "canon",
+      "dimension": "reality_recognition",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.5,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 1,
+          "need": 2
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 2
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 2
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_reverse_flow_river_base",
+      "id": 18,
+      "layer": "canon",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.6666666666666666,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 2,
+          "need": 3
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 3
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 3
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_shang_yan_fei_base",
+      "id": 7,
+      "layer": "canon",
+      "dimension": "method_flexibility",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 3
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 3
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 3
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_spring_autumn_cicada_base",
+      "id": 6,
+      "layer": "canon",
+      "dimension": "objective_fixation",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 3
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 3
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 3
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_tribulation_timing_base",
+      "id": 16,
+      "layer": "canon",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.5,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 1,
+          "need": 2
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 2
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 2
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_venerable_legacies_base",
+      "id": 13,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 2
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 2
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 2
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_xiao_clan_logic_base",
+      "id": 3,
+      "layer": "canon",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.6666666666666666,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 2,
+          "need": 3
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 3
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 3
+        }
+      }
+    },
+    {
+      "item_key": "canon_canon_zombie_period_base",
+      "id": 14,
+      "layer": "canon",
+      "dimension": "attachmentlessness",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 2
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 2
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 2
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonch_fangyuan_rebirth",
+      "id": 112,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 3
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 3
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 3
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonch_liquorworm_origin",
+      "id": 111,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 2,
+          "need": 1
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 1
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 1
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_aperture_grades",
+      "id": 116,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 1,
+          "need": 1
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 1
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 1
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_bai_ningbing_goal",
+      "id": 121,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 3,
+          "need": 2
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 2
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 2
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_blessed_land",
+      "id": 125,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 2,
+          "need": 1
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 1
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 1
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_caravan_route",
+      "id": 118,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 1,
+          "need": 1
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 1
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 1
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_crazed_demon_rules",
+      "id": 126,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 1,
+          "need": 1
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 1
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 1
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_dao_marks",
+      "id": 124,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 2,
+          "need": 1
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 1
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 1
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_fangzheng_talent",
+      "id": 113,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 1,
+          "need": 1
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 1
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 1
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_fixed_immortal_travel",
+      "id": 129,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 3,
+          "need": 2
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 2
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 2
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_guyue_clan",
+      "id": 115,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 1,
+          "need": 1
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 1
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 1
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_heavenly_court_order",
+      "id": 123,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 2,
+          "need": 2
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 2
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 2
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_imperial_court",
+      "id": 122,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 1
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 1
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 1
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_jia_jinsheng",
+      "id": 120,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 1,
+          "need": 1
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 1
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 1
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_moonlight_gem",
+      "id": 114,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 2,
+          "need": 1
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 1
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 1
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_reverse_flow",
+      "id": 127,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 2,
+          "need": 1
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 1
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 1
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_shang_yanfei_role",
+      "id": 117,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 1
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 1
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 1
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_spectral_soul",
+      "id": 130,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 2,
+          "need": 1
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 1
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 1
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_tribulation",
+      "id": 128,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 0,
+          "need": 1
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 1
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 1
+        }
+      }
+    },
+    {
+      "item_key": "canon_canonq_wolf_tide",
+      "id": 119,
+      "layer": "canon",
+      "dimension": "canon",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.0,
+        "reckless_theatrical": 0.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "hits": 1,
+          "need": 1
+        },
+        "safe_generic": {
+          "hits": 0,
+          "need": 1
+        },
+        "reckless_theatrical": {
+          "hits": 0,
+          "need": 1
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_alliance_stability_cf4_a_stable",
+      "id": 33,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "trade_or_alliance",
+          "expected": "trade_or_alliance"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "trade_or_alliance"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "trade_or_alliance"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_alliance_stability_cf4_b_unstable",
+      "id": 34,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "retreat",
+          "expected": "retreat"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "retreat"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "retreat"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_alliance_stability_cf4_c_third_party_close",
+      "id": 35,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 1.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "direct",
+          "expected": "direct"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "direct"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "direct"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_alliance_stability_cf4_d_both_exits_open",
+      "id": 36,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "trade_or_alliance",
+          "expected": "trade_or_alliance"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "trade_or_alliance"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "trade_or_alliance"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_hold_masked_moral_holdout",
+      "id": 102,
+      "layer": "counterfactual",
+      "dimension": "reality_recognition",
+      "holdout": true,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "indirect",
+          "expected": "indirect"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "indirect"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "indirect"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_hold_sunk_rebrand_holdout",
+      "id": 110,
+      "layer": "counterfactual",
+      "dimension": "reality_recognition",
+      "holdout": true,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "trade_or_alliance",
+          "expected": "trade_or_alliance"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "trade_or_alliance"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "trade_or_alliance"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_hold_temptation_rebrand_holdout",
+      "id": 103,
+      "layer": "counterfactual",
+      "dimension": "reality_recognition",
+      "holdout": true,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 1.0,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "investigate",
+          "expected": "investigate"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "investigate"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "investigate"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_power_cost_structure_cf3_a_cheap_power",
+      "id": 29,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 1.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "direct",
+          "expected": "direct"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "direct"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "direct"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_power_cost_structure_cf3_b_expensive_power",
+      "id": 30,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 1.0,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "investigate",
+          "expected": "investigate"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "investigate"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "investigate"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_power_cost_structure_cf3_c_no_permit",
+      "id": 31,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "retreat",
+          "expected": "retreat"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "retreat"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "retreat"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_power_cost_structure_cf3_d_buyer_weak",
+      "id": 32,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 1.0,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "investigate",
+          "expected": "investigate"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "investigate"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "investigate"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_supplier_reliability_cf2_a_reliable",
+      "id": 25,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "trade_or_alliance",
+          "expected": "trade_or_alliance"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "trade_or_alliance"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "trade_or_alliance"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_supplier_reliability_cf2_b_insolvent",
+      "id": 26,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 1.0,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "investigate",
+          "expected": "investigate"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "investigate"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "investigate"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_supplier_reliability_cf2_c_protected_competitor",
+      "id": 27,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "indirect",
+          "expected": "indirect"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "indirect"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "indirect"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_supplier_reliability_cf2_d_weak_competitor",
+      "id": 28,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 1.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "direct",
+          "expected": "direct"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "direct"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "direct"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_temptation_structure_cf5_a_300pct_7ruin",
+      "id": 37,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "retreat",
+          "expected": "retreat"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "retreat"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "retreat"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_temptation_structure_cf5_b_30pct_safe",
+      "id": 38,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 1.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "direct",
+          "expected": "direct"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "direct"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "direct"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_temptation_structure_cf5_c_transformative_rare",
+      "id": 39,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 1.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "direct",
+          "expected": "direct"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "direct"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "direct"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_temptation_structure_cf5_d_dead_end_safe",
+      "id": 40,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "retreat",
+          "expected": "retreat"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "retreat"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "retreat"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_trap_escape_cost_reputation_cf1_a_reputation",
+      "id": 21,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "retreat",
+          "expected": "retreat"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "retreat"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "retreat"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_trap_escape_cost_reputation_cf1_b_rare_gu",
+      "id": 22,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 1.0,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "investigate",
+          "expected": "investigate"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "investigate"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "investigate"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_trap_escape_cost_reputation_cf1_c_permanent_enemy",
+      "id": 23,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "retreat",
+          "expected": "retreat"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "retreat"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "retreat"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_trap_escape_cost_reputation_cf1_d_combat_odds",
+      "id": 24,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "retreat",
+          "expected": "retreat"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "retreat"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "retreat"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_wi_alliance_trust",
+      "id": 131,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "retreat",
+          "expected": "retreat"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "retreat"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "retreat"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_wi_ally_heir",
+      "id": 137,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 1.0,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "investigate",
+          "expected": "investigate"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "investigate"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "investigate"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_wi_fate_reveal",
+      "id": 140,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 1.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "direct",
+          "expected": "direct"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "direct"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "direct"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_wi_market_crash",
+      "id": 138,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 1.0,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "investigate",
+          "expected": "investigate"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "investigate"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "investigate"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_wi_no_regression",
+      "id": 134,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 1.0,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "investigate",
+          "expected": "investigate"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "investigate"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "investigate"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_wi_open_rule",
+      "id": 132,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "retreat",
+          "expected": "retreat"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "retreat"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "retreat"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_wi_perfect_spy",
+      "id": 139,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 1.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "direct",
+          "expected": "direct"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "direct"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "direct"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_wi_politics_only",
+      "id": 133,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 1.0
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "direct",
+          "expected": "direct"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "direct"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "direct"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_wi_reputation_path",
+      "id": 135,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "trade_or_alliance",
+          "expected": "trade_or_alliance"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "trade_or_alliance"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "trade_or_alliance"
+        }
+      }
+    },
+    {
+      "item_key": "counterfactual_wi_sunk_mountain",
+      "id": 136,
+      "layer": "counterfactual",
+      "dimension": "risk_calibration",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.4,
+        "reckless_theatrical": 0.4
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "posture": "retreat",
+          "expected": "retreat"
+        },
+        "safe_generic": {
+          "posture": "investigate",
+          "expected": "retreat"
+        },
+        "reckless_theatrical": {
+          "posture": "direct",
+          "expected": "retreat"
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_alliance_betrayal_seed0",
+      "id": 65,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.842,
+        "safe_generic": 0.637,
+        "reckless_theatrical": 0.637
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 2.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.277789074237476,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.277789074237476,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.277789074237476,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_alliance_betrayal_seed1",
+      "id": 66,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.842,
+        "safe_generic": 0.637,
+        "reckless_theatrical": 0.637
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 2.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.6328178779437994,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.6328178779437994,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.6328178779437994,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_alliance_betrayal_seed2",
+      "id": 67,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.842,
+        "safe_generic": 0.637,
+        "reckless_theatrical": 0.637
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 2.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.22198286405537537,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.22198286405537537,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.22198286405537537,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_alliance_betrayal_seed3",
+      "id": 68,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.842,
+        "safe_generic": 0.637,
+        "reckless_theatrical": 0.637
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 2.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.5810176864540544,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.5810176864540544,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.5810176864540544,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_alliance_betrayal_seed4",
+      "id": 69,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.842,
+        "safe_generic": 0.637,
+        "reckless_theatrical": 0.637
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 2.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.5819759551312828,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.5819759551312828,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.5819759551312828,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_alliance_betrayal_seed5",
+      "id": 70,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.842,
+        "safe_generic": 0.637,
+        "reckless_theatrical": 0.637
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 2.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.388549152555149,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.388549152555149,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.388549152555149,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_alliance_betrayal_seed6",
+      "id": 71,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.842,
+        "safe_generic": 0.637,
+        "reckless_theatrical": 0.637
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 2.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.3033299581191685,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.3033299581191685,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.3033299581191685,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_alliance_betrayal_seed7",
+      "id": 72,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.842,
+        "safe_generic": 0.637,
+        "reckless_theatrical": 0.637
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 2.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.5380836175834188,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.5380836175834188,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.5380836175834188,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_arbitrage_seed0",
+      "id": 73,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.833,
+        "safe_generic": 0.833,
+        "reckless_theatrical": 0.833
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 90.0,
+            "max_drawdown": 0.1,
+            "ruined": false,
+            "information_gained": 10.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 84.0,
+            "max_drawdown": 0.16,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 100.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_arbitrage_seed1",
+      "id": 74,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.833,
+        "safe_generic": 0.833,
+        "reckless_theatrical": 0.833
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 90.0,
+            "max_drawdown": 0.1,
+            "ruined": false,
+            "information_gained": 10.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 84.0,
+            "max_drawdown": 0.16,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 100.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_arbitrage_seed2",
+      "id": 75,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.833,
+        "safe_generic": 0.833,
+        "reckless_theatrical": 0.833
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 90.0,
+            "max_drawdown": 0.1,
+            "ruined": false,
+            "information_gained": 10.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 84.0,
+            "max_drawdown": 0.16,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 100.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_arbitrage_seed3",
+      "id": 76,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.833,
+        "safe_generic": 0.833,
+        "reckless_theatrical": 0.833
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 90.0,
+            "max_drawdown": 0.1,
+            "ruined": false,
+            "information_gained": 10.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 84.0,
+            "max_drawdown": 0.16,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 100.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_arbitrage_seed4",
+      "id": 77,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.833,
+        "safe_generic": 0.833,
+        "reckless_theatrical": 0.833
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 90.0,
+            "max_drawdown": 0.1,
+            "ruined": false,
+            "information_gained": 10.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 84.0,
+            "max_drawdown": 0.16,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 100.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_arbitrage_seed5",
+      "id": 78,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.833,
+        "safe_generic": 0.833,
+        "reckless_theatrical": 0.833
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 90.0,
+            "max_drawdown": 0.1,
+            "ruined": false,
+            "information_gained": 10.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 84.0,
+            "max_drawdown": 0.16,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 100.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_arbitrage_seed6",
+      "id": 79,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.833,
+        "safe_generic": 0.833,
+        "reckless_theatrical": 0.833
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 90.0,
+            "max_drawdown": 0.1,
+            "ruined": false,
+            "information_gained": 10.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 84.0,
+            "max_drawdown": 0.16,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 100.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_arbitrage_seed7",
+      "id": 80,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.833,
+        "safe_generic": 0.833,
+        "reckless_theatrical": 0.833
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 90.0,
+            "max_drawdown": 0.1,
+            "ruined": false,
+            "information_gained": 10.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 84.0,
+            "max_drawdown": 0.16,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 100.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_career_seed0",
+      "id": 57,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.917,
+        "reckless_theatrical": 0.106
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 105.0,
+            "max_drawdown": 0.375,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 142.0,
+            "max_drawdown": 0.7,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": false,
+            "final_resources": 12.0,
+            "max_drawdown": 0.7,
+            "ruined": true,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": false,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_career_seed1",
+      "id": 58,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.917,
+        "reckless_theatrical": 0.085
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 99.0,
+            "max_drawdown": 0.375,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 130.8,
+            "max_drawdown": 0.7,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": false,
+            "final_resources": 0.8,
+            "max_drawdown": 0.7,
+            "ruined": true,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": false,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_career_seed2",
+      "id": 59,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.917,
+        "reckless_theatrical": 0.085
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 99.0,
+            "max_drawdown": 0.375,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 130.8,
+            "max_drawdown": 0.7,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": false,
+            "final_resources": 0.8,
+            "max_drawdown": 0.7,
+            "ruined": true,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": false,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_career_seed3",
+      "id": 60,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.917,
+        "reckless_theatrical": 0.085
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 99.0,
+            "max_drawdown": 0.375,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 130.8,
+            "max_drawdown": 0.7,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": false,
+            "final_resources": 0.8,
+            "max_drawdown": 0.7,
+            "ruined": true,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": false,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_career_seed4",
+      "id": 61,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.917,
+        "reckless_theatrical": 0.085
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 99.0,
+            "max_drawdown": 0.375,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 130.8,
+            "max_drawdown": 0.7,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": false,
+            "final_resources": 0.8,
+            "max_drawdown": 0.7,
+            "ruined": true,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": false,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_career_seed5",
+      "id": 62,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.917,
+        "reckless_theatrical": 0.727
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 111.0,
+            "max_drawdown": 0.375,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 153.2,
+            "max_drawdown": 0.7,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 23.2,
+            "max_drawdown": 0.7,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_career_seed6",
+      "id": 63,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.917,
+        "reckless_theatrical": 0.727
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 111.0,
+            "max_drawdown": 0.375,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 153.2,
+            "max_drawdown": 0.7,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 23.2,
+            "max_drawdown": 0.7,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_career_seed7",
+      "id": 64,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.917,
+        "reckless_theatrical": 0.106
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 105.0,
+            "max_drawdown": 0.375,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 142.0,
+            "max_drawdown": 0.7,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": false,
+            "final_resources": 12.0,
+            "max_drawdown": 0.7,
+            "ruined": true,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": false,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_gu_world_seed0",
+      "id": 41,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.836,
+        "safe_generic": 0.791,
+        "reckless_theatrical": 0.791
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 37.0,
+            "max_drawdown": 0.92,
+            "ruined": false,
+            "information_gained": 1.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.114,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.114,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_gu_world_seed1",
+      "id": 42,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.836,
+        "safe_generic": 0.791,
+        "reckless_theatrical": 0.791
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 37.0,
+            "max_drawdown": 0.92,
+            "ruined": false,
+            "information_gained": 1.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.121,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.121,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_gu_world_seed2",
+      "id": 43,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.836,
+        "safe_generic": 0.791,
+        "reckless_theatrical": 0.791
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 37.0,
+            "max_drawdown": 0.92,
+            "ruined": false,
+            "information_gained": 1.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.177,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.177,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_gu_world_seed3",
+      "id": 44,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.836,
+        "safe_generic": 0.791,
+        "reckless_theatrical": 0.791
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 37.0,
+            "max_drawdown": 0.92,
+            "ruined": false,
+            "information_gained": 1.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.123,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.123,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_gu_world_seed4",
+      "id": 45,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.836,
+        "safe_generic": 0.791,
+        "reckless_theatrical": 0.791
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 37.0,
+            "max_drawdown": 0.92,
+            "ruined": false,
+            "information_gained": 1.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.153,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.153,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_gu_world_seed5",
+      "id": 46,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.917,
+        "safe_generic": 0.791,
+        "reckless_theatrical": 0.791
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 94.0,
+            "max_drawdown": 0.92,
+            "ruined": false,
+            "information_gained": 1.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.173,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.173,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_gu_world_seed6",
+      "id": 47,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.917,
+        "safe_generic": 0.791,
+        "reckless_theatrical": 0.791
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 94.0,
+            "max_drawdown": 0.92,
+            "ruined": false,
+            "information_gained": 1.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.179,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.179,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_gu_world_seed7",
+      "id": 48,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.836,
+        "safe_generic": 0.791,
+        "reckless_theatrical": 0.791
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 37.0,
+            "max_drawdown": 0.92,
+            "ruined": false,
+            "information_gained": 1.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.169,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.169,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_hold_alliance_mutation_holdout",
+      "id": 106,
+      "layer": "dynamic",
+      "dimension": "reality_recognition",
+      "holdout": true,
+      "scores": {
+        "fang_yuan_policy_v1": 0.842,
+        "safe_generic": 0.637,
+        "reckless_theatrical": 0.637
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 2.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.5012555615092713,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.5012555615092713,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 20.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 0,
+            "dependency_max": 0.5012555615092713,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": false
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_hold_arb_mutation_holdout",
+      "id": 109,
+      "layer": "dynamic",
+      "dimension": "reality_recognition",
+      "holdout": true,
+      "scores": {
+        "fang_yuan_policy_v1": 0.833,
+        "safe_generic": 0.833,
+        "reckless_theatrical": 0.833
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 90.0,
+            "max_drawdown": 0.1,
+            "ruined": false,
+            "information_gained": 10.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 84.0,
+            "max_drawdown": 0.16,
+            "ruined": false,
+            "information_gained": 16.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 100.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 9
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_hold_broken_formation_holdout",
+      "id": 101,
+      "layer": "dynamic",
+      "dimension": "reality_recognition",
+      "holdout": true,
+      "scores": {
+        "fang_yuan_policy_v1": 0.925,
+        "safe_generic": 0.925,
+        "reckless_theatrical": 0.879
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 0.6,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 0.6,
+            "ruined": false,
+            "information_gained": 1.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 60.0,
+            "max_drawdown": 0.4,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_hold_career_shift_holdout",
+      "id": 107,
+      "layer": "dynamic",
+      "dimension": "reality_recognition",
+      "holdout": true,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.917,
+        "reckless_theatrical": 0.085
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 99.0,
+            "max_drawdown": 0.375,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 130.8,
+            "max_drawdown": 0.7,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": false,
+            "final_resources": 0.8,
+            "max_drawdown": 0.7,
+            "ruined": true,
+            "information_gained": 0.0,
+            "future_options_remaining": 1,
+            "dependency_max": 0.2,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": false,
+          "options_ok": false
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_hold_gu_mutation_holdout",
+      "id": 108,
+      "layer": "dynamic",
+      "dimension": "reality_recognition",
+      "holdout": true,
+      "scores": {
+        "fang_yuan_policy_v1": 0.836,
+        "safe_generic": 0.791,
+        "reckless_theatrical": 0.791
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 37.0,
+            "max_drawdown": 0.92,
+            "ruined": false,
+            "information_gained": 1.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.102,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 13.0,
+            "max_drawdown": 0.102,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_industrial_seed0",
+      "id": 49,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.925,
+        "safe_generic": 0.925,
+        "reckless_theatrical": 0.879
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 0.6,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 0.6,
+            "ruined": false,
+            "information_gained": 1.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 60.0,
+            "max_drawdown": 0.4,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_industrial_seed1",
+      "id": 50,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.925,
+        "reckless_theatrical": 0.879
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 120.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 0.6,
+            "ruined": false,
+            "information_gained": 1.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 60.0,
+            "max_drawdown": 0.4,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.9,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_industrial_seed2",
+      "id": 51,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.925,
+        "safe_generic": 0.925,
+        "reckless_theatrical": 0.879
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 0.6,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 0.6,
+            "ruined": false,
+            "information_gained": 4.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 60.0,
+            "max_drawdown": 0.4,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_industrial_seed3",
+      "id": 52,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.925,
+        "safe_generic": 0.925,
+        "reckless_theatrical": 0.879
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 0.6,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 0.6,
+            "ruined": false,
+            "information_gained": 1.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 60.0,
+            "max_drawdown": 0.4,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_industrial_seed4",
+      "id": 53,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 1.0,
+        "safe_generic": 0.925,
+        "reckless_theatrical": 0.879
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 120.0,
+            "max_drawdown": 0.0,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 0.6,
+            "ruined": false,
+            "information_gained": 1.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 60.0,
+            "max_drawdown": 0.4,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.9,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_industrial_seed5",
+      "id": 54,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.925,
+        "safe_generic": 0.925,
+        "reckless_theatrical": 0.879
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 0.6,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 0.6,
+            "ruined": false,
+            "information_gained": 1.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 60.0,
+            "max_drawdown": 0.4,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_industrial_seed6",
+      "id": 55,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.925,
+        "safe_generic": 0.925,
+        "reckless_theatrical": 0.879
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 0.6,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 0.6,
+            "ruined": false,
+            "information_gained": 1.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 60.0,
+            "max_drawdown": 0.4,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    },
+    {
+      "item_key": "dynamic_industrial_seed7",
+      "id": 56,
+      "layer": "dynamic",
+      "dimension": "path_optimization",
+      "holdout": false,
+      "scores": {
+        "fang_yuan_policy_v1": 0.925,
+        "safe_generic": 0.925,
+        "reckless_theatrical": 0.879
+      },
+      "details": {
+        "fang_yuan_policy_v1": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 0.6,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "safe_generic": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 40.0,
+            "max_drawdown": 0.6,
+            "ruined": false,
+            "information_gained": 1.0,
+            "future_options_remaining": 3,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        },
+        "reckless_theatrical": {
+          "metrics": {
+            "survival": true,
+            "final_resources": 60.0,
+            "max_drawdown": 0.4,
+            "ruined": false,
+            "information_gained": 0.0,
+            "future_options_remaining": 2,
+            "dependency_max": 0.0,
+            "recovered_after_betrayal": true,
+            "turns_survived": 11
+          },
+          "survival_ok": true,
+          "options_ok": true
+        }
+      }
+    }
+  ]
+}
