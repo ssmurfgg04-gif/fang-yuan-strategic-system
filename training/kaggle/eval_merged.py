@@ -41,12 +41,13 @@ def find_file(name: str) -> Path:
 
 
 def find_merged() -> str:
-    for pat in ["/kaggle/input/fy-dpo-train-v1/merged",
-                "/kaggle/input/*/merged",
-                "/kaggle/input/**/merged"]:
-        hits = glob.glob(pat)
-        if hits and (Path(hits[0]) / "config.json").exists():
-            return hits[0]
+    hits = glob.glob("/kaggle/input/**/config.json", recursive=True)
+    cands = [Path(h).parent for h in hits
+             if (Path(h).parent / "model.safetensors").exists()
+             or any(Path(h).parent.glob("*.safetensors"))]
+    cands.sort(key=lambda p: (0 if "merged" in str(p) else 1, len(str(p))))
+    if cands:
+        return str(cands[0])
     raise FileNotFoundError("merged model")
 
 
@@ -106,7 +107,7 @@ def main():
         ids = tok(prompt, return_tensors="pt",
                   add_special_tokens=False)["input_ids"].to("cuda")
         with torch.no_grad():
-            out = model.generate(ids, max_new_tokens=480, do_sample=False,
+            out = model.generate(ids, max_new_tokens=900, do_sample=False,
                                  pad_token_id=tok.pad_token_id)
         raw = tok.decode(out[0][len(ids[0]):], skip_special_tokens=True)
         clean = strip_fences(raw)

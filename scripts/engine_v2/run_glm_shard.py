@@ -54,6 +54,19 @@ def main() -> None:
             except Exception:
                 pass
     todo = [it for it in mine if it["item_key"] not in done]
+
+    def _needs_llm(it) -> int:
+        layer = it["layer"]
+        if layer == "canon":
+            return 0
+        if layer == "quote_verification":
+            return 1
+        if layer in ("counterfactual", "style_concealment"):
+            return 2
+        return 3  # dynamic
+
+    # cheap/deterministic items first so every round makes concrete progress
+    todo.sort(key=lambda it: (_needs_llm(it), it["id"]))
     print(f"[shard {args.shard}/{args.num_shards}] items={len(mine)} "
           f"done={len(done)} todo={len(todo)}", flush=True)
 

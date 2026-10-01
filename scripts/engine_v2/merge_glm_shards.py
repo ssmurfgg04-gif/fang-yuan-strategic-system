@@ -22,16 +22,22 @@ def main() -> None:
     ap.add_argument("--log-db", action="store_true")
     args = ap.parse_args()
 
-    shards = [json.load(open(p)) for p in sorted(Path(".").glob(args.in_glob))]
-    if not shards:
-        print("no shards found"); sys.exit(1)
     seen, items = set(), []
-    for s in shards:
-        for it in s["items"]:
-            if it["item_key"] in seen:
+    # resumable incremental item files are the source of truth
+    for p in sorted(Path(".").glob("results/glm_shard_*_items.jsonl")):
+        for line in p.read_text(encoding="utf-8").splitlines():
+            try:
+                it = json.loads(line)
+            except Exception:
                 continue
-            seen.add(it["item_key"])
+            if it["item_key"] in seen:
+                seen.add(it["item_key"]); items = [x for x in items if x["item_key"] != it["item_key"]]
+            else:
+                seen.add(it["item_key"])
             items.append(it)
+    shards = []
+    if not items:
+        print("no items found"); sys.exit(1)
     dim_scores: dict[str, list[float]] = {}
     for it in items:
         dim_scores.setdefault(it["dimension"], []).append(it["score"])

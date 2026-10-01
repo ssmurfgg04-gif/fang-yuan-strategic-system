@@ -1,0 +1,27 @@
+{
+  "run_id": "glm_selfconsistency_v2_1790893746",
+  "adapter": "glm_selfconsistency_v2",
+  "F": 0.829,
+  "dimensions": {
+    "R": 0.557,
+    "P": 0.854,
+    "I": 0.802,
+    "C": 1.0,
+    "M": 0.639,
+    "A": 0.889,
+    "O": 1.0
+  },
+  "layers": {
+    "counterfactual": 0.55,
+    "dynamic": 0.877,
+    "quote_verification": 0.545,
+    "style_concealment": 1.0,
+    "canon": 0.802
+  },
+  "n_items": 94,
+  "shards": 0,
+  "holdout_mean": 0.918,
+  "holdout_n": 2,
+  "nonholdout_mean": 0.751,
+  "timestamp": "2026-10-01T22:29:06+00:00"
+}

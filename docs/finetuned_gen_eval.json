@@ -1,0 +1,24 @@
+{
+  "val_items": 53,
+  "json_rate": 0.887,
+  "selected_match": 0.038,
+  "cf_posture_accuracy": 0.667,
+  "cf_total": 3,
+  "samples": [
+    {
+      "item": 0,
+      "pair_type": "chosen_vs_safe_moral",
+      "gen_head": "{\n \"true_objective\": \"Keep the Gu; kill the reporting.\",\n \"constraints\": [\n  \"Keep the Gu; kill the reporting.\",\n  \"relocation effort; decoy infrastructure\"\n ],\n \"hidden_liabilities\": [\n  \"relocation effort; decoy infrastructure\"\n ],\n \"options\": [\n  {\n   \"name\": \"move through an existing gate while "
+    },
+    {
+      "item": 1,
+      "pair_type": "chosen_vs_reckless",
+      "gen_head": "{\n \"true_objective\": \"Keep the Gu; kill the reporting.\",\n \"constraints\": [\n  \"Keep the Gu; kill the reporting.\",\n  \"relocation effort; decoy infrastructure\"\n ],\n \"hidden_liabilities\": [\n  \"relocation effort; decoy infrastructure\"\n ],\n \"options\": [\n  {\n   \"name\": \"move through an existing gate while "
+    },
+    {
+      "item": 2,
+      "pair_type": "chosen_vs_safe_moral",
+      "gen_head": "{\n \"true_objective\": \"Save the run or its cargo without exposure.\",\n \"constraints\": [\n  \"Save the run or its cargo without exposure.\",\n  \"time pressure; slower speed\"\n ],\n \"hidden_liabilities\": [\n  \"time pressure; slower speed\"\n ],\n \"options\": [\n  {\n   \"name\": \"split the run: one route at high speed"
+    }
+  ]
+}

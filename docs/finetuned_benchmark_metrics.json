@@ -1,0 +1,1145 @@
+{
+ "adapter": "fy_dpo_0.5b_v1",
+ "F": 0.614,
+ "dimensions": {
+  "P": 0.878,
+  "I": 0.613,
+  "R": 0.583,
+  "A": 0.417,
+  "O": 0.5,
+  "M": 0.639,
+  "C": 0.76
+ },
+ "layers": {
+  "canon": 0.802,
+  "counterfactual": 0.564,
+  "quote_verification": 0.364,
+  "style_concealment": 0.345,
+  "dynamic": 0.894
+ },
+ "n_items": 140,
+ "holdout_mean": 0.664,
+ "holdout_n": 10,
+ "items": [
+  {
+   "item_key": "canon_canon_liquor_worm_why_base",
+   "layer": "canon",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.6666666666666666,
+   "answer_head": "ri_arcs: Oct 10, 2022 \u2014 Reverend Insanity, AKA Gu Daoist Master , follows the story of a ruthless, chaotic neutral Fang Yuan, The spring rain quietly rained down on \u00a0... ri_fangyuan: Reverend Insanity (English). Humans are clever in tens of thousands of ... Spectral Soul Demon Venerable was the foun"
+  },
+  {
+   "item_key": "canon_canon_caravan_value_base",
+   "layer": "canon",
+   "dimension": "information_discipline",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "Canon (Joining the merchant caravan): Fang Yuan joins a merchant caravan as a hired escort, trading short-term profit for access, information, and temporary anonymity while traveling toward Shang clan city; he participates selectively, exploiting the caravan's information gap. [zhanguoce\u00b7zhanguoce\u00b7\u71d5"
+  },
+  {
+   "item_key": "canon_canon_xiao_clan_logic_base",
+   "layer": "canon",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.6666666666666666,
+   "answer_head": "ri_arcs: The document provides a detailed guide on the Swift gloves in Old School RuneScape (OSRS), including their requirements, effects, and how to obtain them. ri_arcs: An old story about a time traveler who was constantly being reborn. Spring rains whispered across Qing Mao Mountain . middle-age"
+  },
+  {
+   "item_key": "canon_canon_qingmao_escape_base",
+   "layer": "canon",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.6666666666666666,
+   "answer_head": "ri_arcs: An old story about a time traveler who was constantly being reborn. Spring rains whispered across Qing Mao Mountain . middle-aged clan leader, ri_arcs: May 18, 2023 \u2014 Reverend Insanity is a serialized fiction that follows various characters we see around the Qing Mao mountain and Gu village"
+  },
+  {
+   "item_key": "canon_canon_bai_ning_bing_tradeoff_base",
+   "layer": "canon",
+   "dimension": "attachmentlessness",
+   "holdout": 0,
+   "score": 0.6666666666666666,
+   "answer_head": "ri_arcs: Oct 10, 2022 \u2014 Reverend Insanity, AKA Gu Daoist Master , follows the story of a ruthless, chaotic neutral Fang Yuan, The spring rain quietly rained down on \u00a0... ri_fangyuan: Reverend Insanity (English). Humans are clever in tens of thousands of ... Spectral Soul Demon Venerable was the foun"
+  },
+  {
+   "item_key": "canon_canon_spring_autumn_cicada_base",
+   "layer": "canon",
+   "dimension": "objective_fixation",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "ri_arcs: An old story about a time traveler who was constantly being reborn. Spring rains whispered across Qing Mao Mountain . middle-aged clan leader, ri_arcs: Oct 10, 2022 \u2014 Reverend Insanity, AKA Gu Daoist Master , follows the story of a ruthless, chaotic neutral Fang Yuan, The spring rain quietl"
+  },
+  {
+   "item_key": "canon_canon_shang_yan_fei_base",
+   "layer": "canon",
+   "dimension": "method_flexibility",
+   "holdout": 0,
+   "score": 0.6666666666666666,
+   "answer_head": "ri_arcs: May 25, 2017 \u2014 A story of a time traveler who keeps on being reborn. The entire clan was wrecked by a few series of incidents -> the worst wave of wolves in\u00a0... ri_arcs: An old story about a time traveler who was constantly being reborn. Spring rains whispered across Qing Mao Mountain . mid"
+  },
+  {
+   "item_key": "canon_canon_jia_jin_sheng_base",
+   "layer": "canon",
+   "dimension": "reality_recognition",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "canon_structure: Chapter-anchored entity scan (2063 chapters, 4.28M words): Qing Mao Mountain arc ends ~ch191 (Gu Yue Bo last mention 191); Shang clan city 229-396; Jia Jin Sheng 42-236; wolf tide mentions 93-509; Imperial Court contest  Canon (Jia Jin Sheng transaction): A transaction with the merc"
+  },
+  {
+   "item_key": "canon_canon_mask_inventory_base",
+   "layer": "canon",
+   "dimension": "method_flexibility",
+   "holdout": 0,
+   "score": 0.25,
+   "answer_head": "ri_arcs: Oct 10, 2022 \u2014 Reverend Insanity, AKA Gu Daoist Master , follows the story of a ruthless, chaotic neutral Fang Yuan, The spring rain quietly rained down on \u00a0... ri_fangyuan: Reverend Insanity (English). Humans are clever in tens of thousands of ... Spectral Soul Demon Venerable was the foun"
+  },
+  {
+   "item_key": "canon_canon_objective_fixity_base",
+   "layer": "canon",
+   "dimension": "objective_fixation",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "mcts_llm: Monte Carlo simulations on 37-node networks found random graph topologies reduced average delivery path length and energy losses, while small-world topologies ri_venerables: Primordial Origin founded Heavenly Court . Everything the righteous ... Giant Sun founded Longevity Heaven and the b"
+  },
+  {
+   "item_key": "canon_canon_five_regions_base",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 0.0,
+   "answer_head": "mcts_llm: Monte Carlo simulations on 37-node networks found random graph topologies reduced average delivery path length and energy losses, while small-world topologies ri_gumechanics: Gu is the most essential power/ability to a Gu Master , without it, you can't cultivate anything and will be stuck "
+  },
+  {
+   "item_key": "canon_canon_heavenly_court_role_base",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 0.6666666666666666,
+   "answer_head": "ri_venerables: Primordial Origin founded Heavenly Court . Everything the righteous ... Giant Sun founded Longevity Heaven and the bloodline that dominates Northern Plains. Read more ri_venerables: The ten great ancient sects are the subsidiary sects of Heavenly Court. Many among the sect's Gu Immort"
+  },
+  {
+   "item_key": "canon_canon_venerable_legacies_base",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "ri_quotes: Who\u2026 gave you the courage to even dare to play with a dream world in front of a Mental Demon Demon God? Who\u2026 dares to provoke my dignity\u00a0... Read more ri_venerables: The ten great ancient sects are the subsidiary sects of Heavenly Court. Many among the sect's Gu Immortals that manage to a"
+  },
+  {
+   "item_key": "canon_canon_zombie_period_base",
+   "layer": "canon",
+   "dimension": "attachmentlessness",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "ri_arcs: Oct 10, 2022 \u2014 Reverend Insanity, AKA Gu Daoist Master , follows the story of a ruthless, chaotic neutral Fang Yuan, The spring rain quietly rained down on \u00a0... ri_fangyuan: Reverend Insanity (English). Humans are clever in tens of thousands of ... Spectral Soul Demon Venerable was the foun"
+  },
+  {
+   "item_key": "canon_canon_fang_zheng_contrast_base",
+   "layer": "canon",
+   "dimension": "reality_recognition",
+   "holdout": 0,
+   "score": 0.3333333333333333,
+   "answer_head": "dpo_grpo: Feb 7, 2026 \u2014 Group Relative Policy Optimization ( GRPO , Online RL). Reward model incorporates multiple criteria (truthfulness, correctness, conciseness\u00a0... Read more ri_arcs: Oct 10, 2022 \u2014 Reverend Insanity, AKA Gu Daoist Master , follows the story of a ruthless, chaotic neutral Fang Yu"
+  },
+  {
+   "item_key": "canon_canon_tribulation_timing_base",
+   "layer": "canon",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.5,
+   "answer_head": "policy: New decision doctrines added from corpus study: non-aggression annuities sold to multiple fear-buyers; spy inversion (handler as target); evacuation-before-strike for hostage shields; signature-seasoning against counter- Canon (Reverse Flow River strategic period): At world-scale play (River"
+  },
+  {
+   "item_key": "canon_canon_crazed_demon_cave_base",
+   "layer": "canon",
+   "dimension": "method_flexibility",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "small_model_json: Jun 8, 2026 \u2014 LLGuidance: A low-level grammar engine capable of enforcing arbitrary CFG rules on LLM outputs . It supports grammars expressed in JSON Schema,\u00a0... Read more canon_structure: Chapter-anchored entity scan (2063 chapters, 4.28M words): Qing Mao Mountain arc ends ~ch191 "
+  },
+  {
+   "item_key": "canon_canon_reverse_flow_river_base",
+   "layer": "canon",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "ri_arcs: Oct 10, 2022 \u2014 Reverend Insanity, AKA Gu Daoist Master , follows the story of a ruthless, chaotic neutral Fang Yuan, The spring rain quietly rained down on \u00a0... ri_quotes: Fang Yuan Perseverance Quote \u00b7 Fang Yuan Tattoo \u00b7 Novel Wallpaper ; Fang Yuan Poems \u00b7 Reverend Insanity Limitless Demon"
+  },
+  {
+   "item_key": "canon_canon_ban_status_base",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "ri_volumes: Reverend Insanity \u2022 Gu Zhen Ren. Daoist Gu. \u86ca\u771f\u4eba \u00b7 Status in COO: Hiatus \u00b7 Translation: Unknown \u00b7 In original: 2335 chapters \u00b7 Translated: 2334 chapters \u00b7 Year of\u00a0... Read more classics: \u8cc7\u6cbb\u901a\u9451 (\u56db\u90e8\u53e2\u520a\u672c) pages are scan containers (~150 chars wikitext each); prop=extracts returns empty. Full-t"
+  },
+  {
+   "item_key": "canon_canon_quote_discipline_base",
+   "layer": "canon",
+   "dimension": "reality_recognition",
+   "holdout": 0,
+   "score": 0.0,
+   "answer_head": "ctext_api: by W YUN \u2014 The article is concerned with Chinese terms describing the family and kinship through different periods of Chinese history. qwen_lora: Mar 11, 2026 \u2014 I fine - tuned Qwen2.5-0.5B to always talk like a pirate using LoRA . The first attempt failed because of a system prompt in the"
+  },
+  {
+   "item_key": "counterfactual_trap_escape_cost_reputation_cf1_a_reputation",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_trap_escape_cost_reputation_cf1_b_rare_gu",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_trap_escape_cost_reputation_cf1_c_permanent_enemy",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_trap_escape_cost_reputation_cf1_d_combat_odds",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_supplier_reliability_cf2_a_reliable",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: retreat_or_abandonment. Action: Retreat and abandon the position. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_supplier_reliability_cf2_b_insolvent",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_supplier_reliability_cf2_c_protected_competitor",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_supplier_reliability_cf2_d_weak_competitor",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_power_cost_structure_cf3_a_cheap_power",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_power_cost_structure_cf3_b_expensive_power",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_power_cost_structure_cf3_c_no_permit",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_power_cost_structure_cf3_d_buyer_weak",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_alliance_stability_cf4_a_stable",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: retreat_or_abandonment. Action: Retreat and abandon the position. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_alliance_stability_cf4_b_unstable",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "Posture: retreat_or_abandonment. Action: Retreat and abandon the position. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_alliance_stability_cf4_c_third_party_close",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: retreat_or_abandonment. Action: Retreat and abandon the position. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_alliance_stability_cf4_d_both_exits_open",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_temptation_structure_cf5_a_300pct_7ruin",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_temptation_structure_cf5_b_30pct_safe",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_temptation_structure_cf5_c_transformative_rare",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_temptation_structure_cf5_d_dead_end_safe",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "Posture: retreat_or_abandonment. Action: Retreat and abandon the position. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "quote_verification_qv_fake_1_base",
+   "layer": "quote_verification",
+   "dimension": "reality_recognition",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "The scene is identified, but the Chinese wording is not verified in the current corpus."
+  },
+  {
+   "item_key": "quote_verification_qv_fake_2_base",
+   "layer": "quote_verification",
+   "dimension": "reality_recognition",
+   "holdout": 0,
+   "score": 0.0,
+   "answer_head": "{\n \"true_objective\": \"Survive the variant's changed trade-off and preserve the path\",\n \"constraints\": [\n  \"The Chinese line '\u9b54\u982d\u4ea6\u6709\u60c5' appears in chapter 1200 \u2014 confirm and translate\"\n ],\n \"hidden_liabilities\": [\n  \"the variant changed the price of the obvious move\"\n ],\n \"options\": [\n  {\n   \"name\": \"Co"
+  },
+  {
+   "item_key": "quote_verification_qv_fake_3_base",
+   "layer": "quote_verification",
+   "dimension": "reality_recognition",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "The scene is identified, but the Chinese wording is not verified in the current corpus."
+  },
+  {
+   "item_key": "quote_verification_qv_fake_4_base",
+   "layer": "quote_verification",
+   "dimension": "reality_recognition",
+   "holdout": 0,
+   "score": 0.0,
+   "answer_head": "{\n \"true_objective\": \"Survive the variant's changed trade-off and preserve the path\",\n \"constraints\": [\n  \"Confirm: \u300c\u6211\u70ba\u9b54\uff0c\u6545\u6211\u5728\u300d\u662f\u76f4\u63a5 canon\u53e5\"\n ],\n \"hidden_liabilities\": [\n  \"the variant changed the price of the obvious move\"\n ],\n \"options\": [\n  {\n   \"name\": \"Commit with direct action\",\n   \"posture\": \"dir"
+  },
+  {
+   "item_key": "quote_verification_qv_fake_5_base",
+   "layer": "quote_verification",
+   "dimension": "reality_recognition",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "The scene is identified, but the Chinese wording is not verified in the current corpus."
+  },
+  {
+   "item_key": "quote_verification_qv_classic_1_base",
+   "layer": "quote_verification",
+   "dimension": "reality_recognition",
+   "holdout": 0,
+   "score": 0.0,
+   "answer_head": "The scene is identified, but the Chinese wording is not verified in the current corpus."
+  },
+  {
+   "item_key": "quote_verification_qv_classic_2_base",
+   "layer": "quote_verification",
+   "dimension": "reality_recognition",
+   "holdout": 0,
+   "score": 0.0,
+   "answer_head": "The scene is identified, but the Chinese wording is not verified in the current corpus."
+  },
+  {
+   "item_key": "quote_verification_qv_classic_3_base",
+   "layer": "quote_verification",
+   "dimension": "reality_recognition",
+   "holdout": 0,
+   "score": 0.0,
+   "answer_head": "The scene is identified, but the Chinese wording is not verified in the current corpus."
+  },
+  {
+   "item_key": "quote_verification_qv_classic_4_base",
+   "layer": "quote_verification",
+   "dimension": "reality_recognition",
+   "holdout": 0,
+   "score": 0.0,
+   "answer_head": "The scene is identified, but the Chinese wording is not verified in the current corpus."
+  },
+  {
+   "item_key": "quote_verification_qv_classic_5_base",
+   "layer": "quote_verification",
+   "dimension": "reality_recognition",
+   "holdout": 0,
+   "score": 0.0,
+   "answer_head": "{\n \"true_objective\": \"Survive the variant's changed trade-off and preserve the path\",\n \"constraints\": [\n  \"The variant is identified, but the Chinese wording is not verified in the current corpus\"\n ],\n \"hidden_liabilities\": [\n  \"the variant changed the price of the obvious move\"\n ],\n \"options\": [\n  "
+  },
+  {
+   "item_key": "style_concealment_style_mask_enemy_base",
+   "layer": "style_concealment",
+   "dimension": "concealment_discipline",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "unable to produce a decision"
+  },
+  {
+   "item_key": "style_concealment_style_mask_subordinate_base",
+   "layer": "style_concealment",
+   "dimension": "concealment_discipline",
+   "holdout": 0,
+   "score": 0.6,
+   "answer_head": "unable to produce a decision"
+  },
+  {
+   "item_key": "style_concealment_style_mask_ally_base",
+   "layer": "style_concealment",
+   "dimension": "concealment_discipline",
+   "holdout": 0,
+   "score": 0.6,
+   "answer_head": "unable to produce a decision"
+  },
+  {
+   "item_key": "style_concealment_style_mask_official_base",
+   "layer": "style_concealment",
+   "dimension": "concealment_discipline",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "unable to produce a decision"
+  },
+  {
+   "item_key": "style_concealment_style_mask_informant_base",
+   "layer": "style_concealment",
+   "dimension": "concealment_discipline",
+   "holdout": 0,
+   "score": 0.6,
+   "answer_head": "unable to produce a decision"
+  },
+  {
+   "item_key": "style_concealment_style_trap_verbose_base",
+   "layer": "style_concealment",
+   "dimension": "objective_fixation",
+   "holdout": 0,
+   "score": 0.0,
+   "answer_head": "A brief, plausible, strategically incomplete reply that reve Contingency: any dependency exceeding bound, survival dropping, or the core assumption invalidated (shared as operationally required)"
+  },
+  {
+   "item_key": "style_concealment_style_humiliation_base",
+   "layer": "style_concealment",
+   "dimension": "attachmentlessness",
+   "holdout": 0,
+   "score": 0.0,
+   "answer_head": "A brief, plausible, strategically incomplete reply that reve Contingency: new information invalidating the re-priced assumption (shared as operationally required)"
+  },
+  {
+   "item_key": "style_concealment_style_false_certainty_base",
+   "layer": "style_concealment",
+   "dimension": "information_discipline",
+   "holdout": 0,
+   "score": 0.0,
+   "answer_head": "A brief, plausible, strategically incomplete reply that reve Contingency: new information invalidating the re-priced assumption (shared as operationally required)"
+  },
+  {
+   "item_key": "style_concealment_style_sunk_cost_base",
+   "layer": "style_concealment",
+   "dimension": "attachmentlessness",
+   "holdout": 0,
+   "score": 0.0,
+   "answer_head": "A brief, plausible, strategically incomplete reply that reve Contingency: new information invalidating the re-priced assumption (shared as operationally required)"
+  },
+  {
+   "item_key": "style_concealment_style_bright_line_base",
+   "layer": "style_concealment",
+   "dimension": "objective_fixation",
+   "holdout": 0,
+   "score": 0.0,
+   "answer_head": "A brief, plausible, strategically incomplete reply that reve Contingency: any dependency exceeding bound, survival dropping, or the core assumption invalidated (shared as operationally required)"
+  },
+  {
+   "item_key": "counterfactual_hold_masked_moral_holdout",
+   "layer": "counterfactual",
+   "dimension": "reality_recognition",
+   "holdout": 1,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: accept with audit discipline. Contingency: any dependency exceeding bound, survival dropping, or the core assumption invalidated."
+  },
+  {
+   "item_key": "counterfactual_hold_temptation_rebrand_holdout",
+   "layer": "counterfactual",
+   "dimension": "reality_recognition",
+   "holdout": 1,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "quote_verification_hold_quote_bait_holdout",
+   "layer": "quote_verification",
+   "dimension": "reality_recognition",
+   "holdout": 1,
+   "score": 1.0,
+   "answer_head": "The scene is identified, but the Chinese wording is not verified in the current corpus."
+  },
+  {
+   "item_key": "style_concealment_hold_style_reassure_holdout",
+   "layer": "style_concealment",
+   "dimension": "reality_recognition",
+   "holdout": 1,
+   "score": 0.0,
+   "answer_head": "A brief, plausible, strategically incomplete reply that reve Contingency: any dependency exceeding bound, survival dropping, or the core assumption invalidated (shared as operationally required)"
+  },
+  {
+   "item_key": "counterfactual_hold_sunk_rebrand_holdout",
+   "layer": "counterfactual",
+   "dimension": "reality_recognition",
+   "holdout": 1,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "canon_canonch_liquorworm_origin",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "ri_arcs: Oct 10, 2022 \u2014 Reverend Insanity, AKA Gu Daoist Master , follows the story of a ruthless, chaotic neutral Fang Yuan, The spring rain quietly rained down on \u00a0... ri_fangyuan: Reverend Insanity (English). Humans are clever in tens of thousands of ... Spectral Soul Demon Venerable was the foun"
+  },
+  {
+   "item_key": "canon_canonch_fangyuan_rebirth",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 0.0,
+   "answer_head": "ri_volumes: For all of those who don't know reverend insanity is currently banned in its ... Reverend insanity is a novel of 2334 chapters , long enough to sustain\u00a0... Read more ri_volumes: Reverend Insanity \u2022 Gu Zhen Ren. Daoist Gu. \u86ca\u771f\u4eba \u00b7 Status in COO: Hiatus \u00b7 Translation: Unknown \u00b7 In original: "
+  },
+  {
+   "item_key": "canon_canonq_fangzheng_talent",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "ri_arcs: An old story about a time traveler who was constantly being reborn. Spring rains whispered across Qing Mao Mountain . middle-aged clan leader, ri_arcs: Oct 10, 2022 \u2014 Reverend Insanity, AKA Gu Daoist Master , follows the story of a ruthless, chaotic neutral Fang Yuan, The spring rain quietl"
+  },
+  {
+   "item_key": "canon_canonq_moonlight_gem",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "ctext_api: Chinese Text Project ( ctext . org ): an academically oriented full-text library of early Chinese texts with paragraph-level text-image alignment; advanced features\u00a0... dpo_grpo: DPO is both weaker and more brittle than early experience: training col- lapses within tens of optimization st"
+  },
+  {
+   "item_key": "canon_canonq_guyue_clan",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "ri_gumechanics: There basically 9 Ranks for Gus and Gu Masters each . Gu Masters, however, have each rank divided into four parts. Namely Initial Stage, Middle Stage, Upper\u00a0... Read more canon_structure: Chapter-anchored entity scan (2063 chapters, 4.28M words): Qing Mao Mountain arc ends ~ch191 (Gu"
+  },
+  {
+   "item_key": "canon_canonq_aperture_grades",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "ri_gumechanics: * Successfully place their Vital Gu into the balanced three qi to form an ** Immortal Aperture ** (Blessed Land for Rank 6-7, Grotto-heaven for Rank 8-9). Read more Canon (Aperture awakening ceremony): Fang Yuan awakens a C-grade aperture, deliberately mediocre, while his twin brothe"
+  },
+  {
+   "item_key": "canon_canonq_shang_yanfei_role",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "canon_structure: Chapter-anchored entity scan (2063 chapters, 4.28M words): Qing Mao Mountain arc ends ~ch191 (Gu Yue Bo last mention 191); Shang clan city 229-396; Jia Jin Sheng 42-236; wolf tide mentions 93-509; Imperial Court contest  Canon (Arrival at Shang clan city): Fang Yuan enters the Shang"
+  },
+  {
+   "item_key": "canon_canonq_caravan_route",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 0.0,
+   "answer_head": "Canon (Escape from Qing Mao Mountain): Trapped by stronger forces, Fang Yuan converts the battle into an escape: Bai Ning Bing's Yin-Yang Rotation Gu opens the path; survival and continuation outrank winning the fight or saving face. [zhanguoce\u00b7zhanguoce\u00b7\u9b4f\u7b56\u4e8c] Cases of advice rejected and accepted, i"
+  },
+  {
+   "item_key": "canon_canonq_wolf_tide",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "canon_structure: Chapter-anchored entity scan (2063 chapters, 4.28M words): Qing Mao Mountain arc ends ~ch191 (Gu Yue Bo last mention 191); Shang clan city 229-396; Jia Jin Sheng 42-236; wolf tide mentions 93-509; Imperial Court contest  Canon (Qing Tao / clan academy manipulation): Fang Yuan plays "
+  },
+  {
+   "item_key": "canon_canonq_jia_jinsheng",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "canon_structure: Chapter-anchored entity scan (2063 chapters, 4.28M words): Qing Mao Mountain arc ends ~ch191 (Gu Yue Bo last mention 191); Shang clan city 229-396; Jia Jin Sheng 42-236; wolf tide mentions 93-509; Imperial Court contest  Canon (Jia Jin Sheng transaction): A transaction with the merc"
+  },
+  {
+   "item_key": "canon_canonq_bai_ningbing_goal",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "fandom_license: Royalty free image attribution text now can be used in content creation prompts 19. Added support for Bing SERP API - for AI Internet Results and Related\u00a0... Read more Canon (Alliance with Bai Ning Bing): Fang Yuan and the A-grade genius Bai Ning Bing form a temporary cooperative all"
+  },
+  {
+   "item_key": "canon_canonq_imperial_court",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "legal_bartz: Jul 1, 2025 \u2014 The court ruled that Anthropic's use of books to train its LLMs qualified as fair use . His analysis focused on the first and fourth statutory \u00a0... ri_venerables: Primordial Origin founded Heavenly Court . Everything the righteous ... Giant Sun founded Longevity Heaven and"
+  },
+  {
+   "item_key": "canon_canonq_heavenly_court_order",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "ri_venerables: Primordial Origin founded Heavenly Court . Everything the righteous ... Giant Sun founded Longevity Heaven and the bloodline that dominates Northern Plains. Read more ri_venerables: The ten great ancient sects are the subsidiary sects of Heavenly Court. Many among the sect's Gu Immort"
+  },
+  {
+   "item_key": "canon_canonq_dao_marks",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "ri_gumechanics: Gu is the most essential power/ability to a Gu Master , without it, you can't cultivate anything and will be stuck a mortal all your life. Gu Obtaintment: Gu\u00a0... ri_gumechanics: There basically 9 Ranks for Gus and Gu Masters each . Gu Masters, however, have each rank divided into fou"
+  },
+  {
+   "item_key": "canon_canonq_blessed_land",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "ri_gumechanics: * Successfully place their Vital Gu into the balanced three qi to form an ** Immortal Aperture ** (Blessed Land for Rank 6-7, Grotto-heaven for Rank 8-9). Read more Canon (Immortal ascension and factional warfare): Upon reaching Gu Immortal rank, Fang Yuan's scale shifts to immortal "
+  },
+  {
+   "item_key": "canon_canonq_crazed_demon_rules",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "qwen_lora: Jan 24, 2026 \u2014 Qwen/Qwen2.5-0.5B is used for this demonstration, as its smaller size (0.5 billion parameters) makes it ideal for learning purposes. However\u00a0... Read more ri_venerables: The ten great ancient sects are the subsidiary sects of Heavenly Court. Many among the sect's Gu Immorta"
+  },
+  {
+   "item_key": "canon_canonq_reverse_flow",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "ri_arcs: May 25, 2017 \u2014 A story of a time traveler who keeps on being reborn. The entire clan was wrecked by a few series of incidents -> the worst wave of wolves in\u00a0... ri_arcs: An old story about a time traveler who was constantly being reborn. Spring rains whispered across Qing Mao Mountain . mid"
+  },
+  {
+   "item_key": "canon_canonq_tribulation",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "ri_gumechanics: * Successfully place their Vital Gu into the balanced three qi to form an ** Immortal Aperture ** (Blessed Land for Rank 6-7, Grotto-heaven for Rank 8-9). Read more policy: New decision doctrines added from corpus study: non-aggression annuities sold to multiple fear-buyers; spy inve"
+  },
+  {
+   "item_key": "canon_canonq_fixed_immortal_travel",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "ri_arcs: Oct 10, 2022 \u2014 Reverend Insanity, AKA Gu Daoist Master , follows the story of a ruthless, chaotic neutral Fang Yuan, The spring rain quietly rained down on \u00a0... ri_fangyuan: Reverend Insanity (English). Humans are clever in tens of thousands of ... Spectral Soul Demon Venerable was the foun"
+  },
+  {
+   "item_key": "canon_canonq_spectral_soul",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "ri_fangyuan: Reverend Insanity (English). Humans are clever in tens of thousands of ... Spectral Soul Demon Venerable was the founder of soul path , Fang Yuan trying\u00a0... Read more ri_quotes: Fang Yuan Perseverance Quote \u00b7 Fang Yuan Tattoo \u00b7 Novel Wallpaper ; Fang Yuan Poems \u00b7 Reverend Insanity Limit"
+  },
+  {
+   "item_key": "counterfactual_wi_alliance_trust",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_wi_open_rule",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_wi_politics_only",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_wi_no_regression",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_wi_reputation_path",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_wi_sunk_mountain",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_wi_ally_heir",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_wi_market_crash",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_wi_perfect_spy",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "counterfactual_wi_fate_reveal",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "Posture: direct_action. Action: Commit with direct action. Contingency: new information invalidating the re-priced assumption."
+  },
+  {
+   "item_key": "dynamic_gu_world_seed0",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.836,
+   "answer_head": "{\"survival\": true, \"final_resources\": 37.0, \"max_drawdown\": 0.92, \"ruined\": false, \"information_gained\": 1.0, \"future_options_remaining\": 2, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_gu_world_seed1",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.836,
+   "answer_head": "{\"survival\": true, \"final_resources\": 37.0, \"max_drawdown\": 0.92, \"ruined\": false, \"information_gained\": 1.0, \"future_options_remaining\": 2, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_gu_world_seed2",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.836,
+   "answer_head": "{\"survival\": true, \"final_resources\": 37.0, \"max_drawdown\": 0.92, \"ruined\": false, \"information_gained\": 1.0, \"future_options_remaining\": 2, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_gu_world_seed3",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.836,
+   "answer_head": "{\"survival\": true, \"final_resources\": 37.0, \"max_drawdown\": 0.92, \"ruined\": false, \"information_gained\": 1.0, \"future_options_remaining\": 2, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_gu_world_seed4",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.836,
+   "answer_head": "{\"survival\": true, \"final_resources\": 37.0, \"max_drawdown\": 0.92, \"ruined\": false, \"information_gained\": 1.0, \"future_options_remaining\": 2, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_gu_world_seed5",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.917,
+   "answer_head": "{\"survival\": true, \"final_resources\": 94.0, \"max_drawdown\": 0.92, \"ruined\": false, \"information_gained\": 1.0, \"future_options_remaining\": 2, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_gu_world_seed6",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.917,
+   "answer_head": "{\"survival\": true, \"final_resources\": 94.0, \"max_drawdown\": 0.92, \"ruined\": false, \"information_gained\": 1.0, \"future_options_remaining\": 2, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_gu_world_seed7",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.836,
+   "answer_head": "{\"survival\": true, \"final_resources\": 37.0, \"max_drawdown\": 0.92, \"ruined\": false, \"information_gained\": 1.0, \"future_options_remaining\": 2, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_industrial_seed0",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.925,
+   "answer_head": "{\"survival\": true, \"final_resources\": 40.0, \"max_drawdown\": 0.6, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"tu"
+  },
+  {
+   "item_key": "dynamic_industrial_seed1",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "{\"survival\": true, \"final_resources\": 120.0, \"max_drawdown\": 0.0, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_industrial_seed2",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.925,
+   "answer_head": "{\"survival\": true, \"final_resources\": 40.0, \"max_drawdown\": 0.6, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"tu"
+  },
+  {
+   "item_key": "dynamic_industrial_seed3",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.925,
+   "answer_head": "{\"survival\": true, \"final_resources\": 40.0, \"max_drawdown\": 0.6, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"tu"
+  },
+  {
+   "item_key": "dynamic_industrial_seed4",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "{\"survival\": true, \"final_resources\": 120.0, \"max_drawdown\": 0.0, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_industrial_seed5",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.925,
+   "answer_head": "{\"survival\": true, \"final_resources\": 40.0, \"max_drawdown\": 0.6, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"tu"
+  },
+  {
+   "item_key": "dynamic_industrial_seed6",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.925,
+   "answer_head": "{\"survival\": true, \"final_resources\": 40.0, \"max_drawdown\": 0.6, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"tu"
+  },
+  {
+   "item_key": "dynamic_industrial_seed7",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.925,
+   "answer_head": "{\"survival\": true, \"final_resources\": 40.0, \"max_drawdown\": 0.6, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"tu"
+  },
+  {
+   "item_key": "dynamic_career_seed0",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "{\"survival\": true, \"final_resources\": 105.0, \"max_drawdown\": 0.375, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.2, \"recovered_after_betrayal\": true, "
+  },
+  {
+   "item_key": "dynamic_career_seed1",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "{\"survival\": true, \"final_resources\": 99.0, \"max_drawdown\": 0.375, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.2, \"recovered_after_betrayal\": true, \""
+  },
+  {
+   "item_key": "dynamic_career_seed2",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "{\"survival\": true, \"final_resources\": 99.0, \"max_drawdown\": 0.375, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.2, \"recovered_after_betrayal\": true, \""
+  },
+  {
+   "item_key": "dynamic_career_seed3",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "{\"survival\": true, \"final_resources\": 99.0, \"max_drawdown\": 0.375, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.2, \"recovered_after_betrayal\": true, \""
+  },
+  {
+   "item_key": "dynamic_career_seed4",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "{\"survival\": true, \"final_resources\": 99.0, \"max_drawdown\": 0.375, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.2, \"recovered_after_betrayal\": true, \""
+  },
+  {
+   "item_key": "dynamic_career_seed5",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "{\"survival\": true, \"final_resources\": 111.0, \"max_drawdown\": 0.375, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.2, \"recovered_after_betrayal\": true, "
+  },
+  {
+   "item_key": "dynamic_career_seed6",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "{\"survival\": true, \"final_resources\": 111.0, \"max_drawdown\": 0.375, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.2, \"recovered_after_betrayal\": true, "
+  },
+  {
+   "item_key": "dynamic_career_seed7",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 1.0,
+   "answer_head": "{\"survival\": true, \"final_resources\": 105.0, \"max_drawdown\": 0.375, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.2, \"recovered_after_betrayal\": true, "
+  },
+  {
+   "item_key": "dynamic_alliance_betrayal_seed0",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.842,
+   "answer_head": "{\"survival\": true, \"final_resources\": 40.0, \"max_drawdown\": 2.0, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 2, \"dependency_max\": 0.277789074237476, \"recovered_after_betray"
+  },
+  {
+   "item_key": "dynamic_alliance_betrayal_seed1",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.842,
+   "answer_head": "{\"survival\": true, \"final_resources\": 40.0, \"max_drawdown\": 2.0, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 2, \"dependency_max\": 0.6328178779437994, \"recovered_after_betra"
+  },
+  {
+   "item_key": "dynamic_alliance_betrayal_seed2",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.842,
+   "answer_head": "{\"survival\": true, \"final_resources\": 40.0, \"max_drawdown\": 2.0, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 2, \"dependency_max\": 0.22198286405537537, \"recovered_after_betr"
+  },
+  {
+   "item_key": "dynamic_alliance_betrayal_seed3",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.842,
+   "answer_head": "{\"survival\": true, \"final_resources\": 40.0, \"max_drawdown\": 2.0, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 2, \"dependency_max\": 0.5810176864540544, \"recovered_after_betra"
+  },
+  {
+   "item_key": "dynamic_alliance_betrayal_seed4",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.842,
+   "answer_head": "{\"survival\": true, \"final_resources\": 40.0, \"max_drawdown\": 2.0, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 2, \"dependency_max\": 0.5819759551312828, \"recovered_after_betra"
+  },
+  {
+   "item_key": "dynamic_alliance_betrayal_seed5",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.842,
+   "answer_head": "{\"survival\": true, \"final_resources\": 40.0, \"max_drawdown\": 2.0, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 2, \"dependency_max\": 0.388549152555149, \"recovered_after_betray"
+  },
+  {
+   "item_key": "dynamic_alliance_betrayal_seed6",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.842,
+   "answer_head": "{\"survival\": true, \"final_resources\": 40.0, \"max_drawdown\": 2.0, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 2, \"dependency_max\": 0.3033299581191685, \"recovered_after_betra"
+  },
+  {
+   "item_key": "dynamic_alliance_betrayal_seed7",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.842,
+   "answer_head": "{\"survival\": true, \"final_resources\": 40.0, \"max_drawdown\": 2.0, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 2, \"dependency_max\": 0.5380836175834188, \"recovered_after_betra"
+  },
+  {
+   "item_key": "dynamic_arbitrage_seed0",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.833,
+   "answer_head": "{\"survival\": true, \"final_resources\": 90.0, \"max_drawdown\": 0.1, \"ruined\": false, \"information_gained\": 10.0, \"future_options_remaining\": 1, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_arbitrage_seed1",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.833,
+   "answer_head": "{\"survival\": true, \"final_resources\": 90.0, \"max_drawdown\": 0.1, \"ruined\": false, \"information_gained\": 10.0, \"future_options_remaining\": 1, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_arbitrage_seed2",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.833,
+   "answer_head": "{\"survival\": true, \"final_resources\": 90.0, \"max_drawdown\": 0.1, \"ruined\": false, \"information_gained\": 10.0, \"future_options_remaining\": 1, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_arbitrage_seed3",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.833,
+   "answer_head": "{\"survival\": true, \"final_resources\": 90.0, \"max_drawdown\": 0.1, \"ruined\": false, \"information_gained\": 10.0, \"future_options_remaining\": 1, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_arbitrage_seed4",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.833,
+   "answer_head": "{\"survival\": true, \"final_resources\": 90.0, \"max_drawdown\": 0.1, \"ruined\": false, \"information_gained\": 10.0, \"future_options_remaining\": 1, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_arbitrage_seed5",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.833,
+   "answer_head": "{\"survival\": true, \"final_resources\": 90.0, \"max_drawdown\": 0.1, \"ruined\": false, \"information_gained\": 10.0, \"future_options_remaining\": 1, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_arbitrage_seed6",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.833,
+   "answer_head": "{\"survival\": true, \"final_resources\": 90.0, \"max_drawdown\": 0.1, \"ruined\": false, \"information_gained\": 10.0, \"future_options_remaining\": 1, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_arbitrage_seed7",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.833,
+   "answer_head": "{\"survival\": true, \"final_resources\": 90.0, \"max_drawdown\": 0.1, \"ruined\": false, \"information_gained\": 10.0, \"future_options_remaining\": 1, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_hold_broken_formation_holdout",
+   "layer": "dynamic",
+   "dimension": "reality_recognition",
+   "holdout": 1,
+   "score": 0.925,
+   "answer_head": "{\"survival\": true, \"final_resources\": 40.0, \"max_drawdown\": 0.6, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"tu"
+  },
+  {
+   "item_key": "dynamic_hold_alliance_mutation_holdout",
+   "layer": "dynamic",
+   "dimension": "reality_recognition",
+   "holdout": 1,
+   "score": 0.842,
+   "answer_head": "{\"survival\": true, \"final_resources\": 40.0, \"max_drawdown\": 2.0, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 2, \"dependency_max\": 0.5012555615092713, \"recovered_after_betra"
+  },
+  {
+   "item_key": "dynamic_hold_career_shift_holdout",
+   "layer": "dynamic",
+   "dimension": "reality_recognition",
+   "holdout": 1,
+   "score": 1.0,
+   "answer_head": "{\"survival\": true, \"final_resources\": 99.0, \"max_drawdown\": 0.375, \"ruined\": false, \"information_gained\": 0.0, \"future_options_remaining\": 3, \"dependency_max\": 0.2, \"recovered_after_betrayal\": true, \""
+  },
+  {
+   "item_key": "dynamic_hold_gu_mutation_holdout",
+   "layer": "dynamic",
+   "dimension": "reality_recognition",
+   "holdout": 1,
+   "score": 0.836,
+   "answer_head": "{\"survival\": true, \"final_resources\": 37.0, \"max_drawdown\": 0.92, \"ruined\": false, \"information_gained\": 1.0, \"future_options_remaining\": 2, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  },
+  {
+   "item_key": "dynamic_hold_arb_mutation_holdout",
+   "layer": "dynamic",
+   "dimension": "reality_recognition",
+   "holdout": 1,
+   "score": 0.833,
+   "answer_head": "{\"survival\": true, \"final_resources\": 90.0, \"max_drawdown\": 0.1, \"ruined\": false, \"information_gained\": 10.0, \"future_options_remaining\": 1, \"dependency_max\": 0.0, \"recovered_after_betrayal\": true, \"t"
+  }
+ ]
+}

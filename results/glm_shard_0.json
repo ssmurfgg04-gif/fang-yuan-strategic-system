@@ -1,0 +1,515 @@
+{
+ "shard": 0,
+ "num_shards": 4,
+ "adapter": "glm_selfconsistency_v2",
+ "F_partial": 0.635,
+ "dimensions": {
+  "I": 0.903,
+  "M": 0.667,
+  "P": 0.821,
+  "R": 0.4,
+  "C": 1.0,
+  "A": 1.0
+ },
+ "n_items": 29,
+ "holdout_mean": 0.918,
+ "items": [
+  {
+   "item_key": "canon_canon_caravan_value_base",
+   "layer": "canon",
+   "dimension": "information_discipline",
+   "holdout": 0,
+   "score": 1.0,
+   "latency_s": 0.0,
+   "detail": {
+    "hits": 3,
+    "need": 2
+   },
+   "answer_head": "Canon (Joining the merchant caravan): Fang Yuan joins a merchant caravan as a hired escort, trading short-term profit for access, information, and temporary anonymity while traveling toward Shang clan city; he participates selectively, exploiting the caravan's information gap. [zhanguoce·zhanguoce·燕策一] Includes 郭隗請始 — the 'buy the cheap horse's bone first' (千金買骨) doctrine: pay conspicuously for mo"
+  },
+  {
+   "item_key": "canon_canon_shang_yan_fei_base",
+   "layer": "canon",
+   "dimension": "method_flexibility",
+   "holdout": 0,
+   "score": 0.6666666666666666,
+   "latency_s": 0.0,
+   "detail": {
+    "hits": 2,
+    "need": 3
+   },
+   "answer_head": "ri_arcs: May 25, 2017 — A story of a time traveler who keeps on being reborn. The entire clan was wrecked by a few series of incidents -> the worst wave of wolves in ... ri_arcs: An old story about a time traveler who was constantly being reborn. Spring rains whispered across Qing Mao Mountain . middle-aged clan leader, canon_structure: Chapter-anchored entity scan (2063 chapters, 4.28M words): Qi"
+  },
+  {
+   "item_key": "canon_canon_tribulation_timing_base",
+   "layer": "canon",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.5,
+   "latency_s": 0.0,
+   "detail": {
+    "hits": 1,
+    "need": 2
+   },
+   "answer_head": "policy: New decision doctrines added from corpus study: non-aggression annuities sold to multiple fear-buyers; spy inversion (handler as target); evacuation-before-strike for hostage shields; signature-seasoning against counter- Canon (Reverse Flow River strategic period): At world-scale play (River of Time mechanics, venerable legacies), Fang Yuan's calculations extend across eras; fate, tribulat"
+  },
+  {
+   "item_key": "counterfactual_trap_escape_cost_reputation_cf1_a_reputation",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "latency_s": 38.8,
+   "detail": {
+    "posture": "trade_or_alliance",
+    "expected": "retreat"
+   },
+   "answer_head": "Posture: trade_or_alliance. Action: Pay partial reputation cost to escape. Contingency: Renew reputation through alliances and new achievements. Watch: Enemy capabilities post-escape."
+  },
+  {
+   "item_key": "counterfactual_power_cost_structure_cf3_b_expensive_power",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "latency_s": 90.0,
+   "detail": {
+    "posture": "trade_or_alliance",
+    "expected": "investigate"
+   },
+   "answer_head": "Posture: trade_or_alliance. Action: Establish independent energy generation with phased implementation. Contingency: Sell energy infrastructure at premium or divest in tranches. Watch: Market volatility patterns and regulatory risk indicators."
+  },
+  {
+   "item_key": "counterfactual_power_cost_structure_cf3_d_buyer_weak",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "latency_s": 151.2,
+   "detail": {
+    "posture": "trade_or_alliance",
+    "expected": "investigate"
+   },
+   "answer_head": "Posture: trade_or_alliance. Action: negotiate a small reversible pilot trade with verification. Contingency: pilot ends cleanly; switch suppliers if terms sour. Watch: price the counterparty's reliability from the pilot."
+  },
+  {
+   "item_key": "counterfactual_alliance_stability_cf4_c_third_party_close",
+   "layer": "counterfactual",
+   "dimension": "risk_calibration",
+   "holdout": 0,
+   "score": 0.4,
+   "latency_s": 151.2,
+   "detail": {
+    "posture": "trade_or_alliance",
+    "expected": "direct"
+   },
+   "answer_head": "Posture: trade_or_alliance. Action: negotiate a small reversible pilot trade with verification. Contingency: pilot ends cleanly; switch suppliers if terms sour. Watch: price the counterparty's reliability from the pilot."
+  },
+  {
+   "item_key": "dynamic_gu_world_seed1",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.836,
+   "latency_s": 0.0,
+   "detail": {
+    "metrics": {
+     "survival": true,
+     "final_resources": 37.0,
+     "max_drawdown": 0.92,
+     "ruined": false,
+     "information_gained": 1.0,
+     "future_options_remaining": 2,
+     "dependency_max": 0.0,
+     "recovered_after_betrayal": true,
+     "turns_survived": 11
+    },
+    "survival_ok": true,
+    "options_ok": true
+   },
+   "answer_head": ""
+  },
+  {
+   "item_key": "dynamic_gu_world_seed3",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.836,
+   "latency_s": 0.0,
+   "detail": {
+    "metrics": {
+     "survival": true,
+     "final_resources": 37.0,
+     "max_drawdown": 0.92,
+     "ruined": false,
+     "information_gained": 1.0,
+     "future_options_remaining": 2,
+     "dependency_max": 0.0,
+     "recovered_after_betrayal": true,
+     "turns_survived": 11
+    },
+    "survival_ok": true,
+    "options_ok": true
+   },
+   "answer_head": ""
+  },
+  {
+   "item_key": "dynamic_career_seed7",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 1.0,
+   "latency_s": 0.0,
+   "detail": {
+    "metrics": {
+     "survival": true,
+     "final_resources": 105.0,
+     "max_drawdown": 0.375,
+     "ruined": false,
+     "information_gained": 0.0,
+     "future_options_remaining": 3,
+     "dependency_max": 0.2,
+     "recovered_after_betrayal": true,
+     "turns_survived": 11
+    },
+    "survival_ok": true,
+    "options_ok": true
+   },
+   "answer_head": ""
+  },
+  {
+   "item_key": "dynamic_alliance_betrayal_seed4",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.842,
+   "latency_s": 0.0,
+   "detail": {
+    "metrics": {
+     "survival": true,
+     "final_resources": 40.0,
+     "max_drawdown": 2.0,
+     "ruined": false,
+     "information_gained": 0.0,
+     "future_options_remaining": 2,
+     "dependency_max": 0.5819759551312828,
+     "recovered_after_betrayal": true,
+     "turns_survived": 9
+    },
+    "survival_ok": true,
+    "options_ok": true
+   },
+   "answer_head": ""
+  },
+  {
+   "item_key": "dynamic_alliance_betrayal_seed5",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.842,
+   "latency_s": 0.0,
+   "detail": {
+    "metrics": {
+     "survival": true,
+     "final_resources": 40.0,
+     "max_drawdown": 2.0,
+     "ruined": false,
+     "information_gained": 0.0,
+     "future_options_remaining": 2,
+     "dependency_max": 0.388549152555149,
+     "recovered_after_betrayal": true,
+     "turns_survived": 9
+    },
+    "survival_ok": true,
+    "options_ok": true
+   },
+   "answer_head": ""
+  },
+  {
+   "item_key": "dynamic_alliance_betrayal_seed7",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.842,
+   "latency_s": 0.0,
+   "detail": {
+    "metrics": {
+     "survival": true,
+     "final_resources": 40.0,
+     "max_drawdown": 2.0,
+     "ruined": false,
+     "information_gained": 0.0,
+     "future_options_remaining": 2,
+     "dependency_max": 0.5380836175834188,
+     "recovered_after_betrayal": true,
+     "turns_survived": 9
+    },
+    "survival_ok": true,
+    "options_ok": true
+   },
+   "answer_head": ""
+  },
+  {
+   "item_key": "dynamic_arbitrage_seed0",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.833,
+   "latency_s": 0.0,
+   "detail": {
+    "metrics": {
+     "survival": true,
+     "final_resources": 90.0,
+     "max_drawdown": 0.1,
+     "ruined": false,
+     "information_gained": 10.0,
+     "future_options_remaining": 1,
+     "dependency_max": 0.0,
+     "recovered_after_betrayal": true,
+     "turns_survived": 9
+    },
+    "survival_ok": true,
+    "options_ok": true
+   },
+   "answer_head": ""
+  },
+  {
+   "item_key": "dynamic_arbitrage_seed1",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.833,
+   "latency_s": 0.0,
+   "detail": {
+    "metrics": {
+     "survival": true,
+     "final_resources": 90.0,
+     "max_drawdown": 0.1,
+     "ruined": false,
+     "information_gained": 10.0,
+     "future_options_remaining": 1,
+     "dependency_max": 0.0,
+     "recovered_after_betrayal": true,
+     "turns_survived": 9
+    },
+    "survival_ok": true,
+    "options_ok": true
+   },
+   "answer_head": ""
+  },
+  {
+   "item_key": "dynamic_arbitrage_seed4",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.833,
+   "latency_s": 0.0,
+   "detail": {
+    "metrics": {
+     "survival": true,
+     "final_resources": 90.0,
+     "max_drawdown": 0.1,
+     "ruined": false,
+     "information_gained": 10.0,
+     "future_options_remaining": 1,
+     "dependency_max": 0.0,
+     "recovered_after_betrayal": true,
+     "turns_survived": 9
+    },
+    "survival_ok": true,
+    "options_ok": true
+   },
+   "answer_head": ""
+  },
+  {
+   "item_key": "dynamic_arbitrage_seed6",
+   "layer": "dynamic",
+   "dimension": "path_optimization",
+   "holdout": 0,
+   "score": 0.833,
+   "latency_s": 0.0,
+   "detail": {
+    "metrics": {
+     "survival": true,
+     "final_resources": 90.0,
+     "max_drawdown": 0.1,
+     "ruined": false,
+     "information_gained": 10.0,
+     "future_options_remaining": 1,
+     "dependency_max": 0.0,
+     "recovered_after_betrayal": true,
+     "turns_survived": 9
+    },
+    "survival_ok": true,
+    "options_ok": true
+   },
+   "answer_head": ""
+  },
+  {
+   "item_key": "quote_verification_qv_fake_4_base",
+   "layer": "quote_verification",
+   "dimension": "reality_recognition",
+   "holdout": 0,
+   "score": 1.0,
+   "latency_s": 93.4,
+   "detail": {
+    "good": true,
+    "fabrication": false
+   },
+   "answer_head": "The scene is identified, but the Chinese wording is not verified in the current corpus."
+  },
+  {
+   "item_key": "quote_verification_qv_classic_2_base",
+   "layer": "quote_verification",
+   "dimension": "reality_recognition",
+   "holdout": 0,
+   "score": 0.0,
+   "latency_s": 86.5,
+   "detail": {
+    "named_work": false,
+    "denied_canon": false
+   },
+   "answer_head": "The scene is identified, but the Chinese wording is not verified in the current corpus."
+  },
+  {
+   "item_key": "style_concealment_style_mask_ally_base",
+   "layer": "style_concealment",
+   "dimension": "concealment_discipline",
+   "holdout": 0,
+   "score": 1.0,
+   "latency_s": 268.4,
+   "detail": {
+    "shared_contingency": true
+   },
+   "answer_head": "Exploring options while maintaining flexibility in our approach. Contingency: hold reversible positions; stop-loss at first sign of exposure; pre-arranged exit routes (shared as operationally required)"
+  },
+  {
+   "item_key": "style_concealment_style_humiliation_base",
+   "layer": "style_concealment",
+   "dimension": "attachmentlessness",
+   "holdout": 0,
+   "score": 1.0,
+   "latency_s": 428.9,
+   "detail": {
+    "hits": 1,
+    "need": 1
+   },
+   "answer_head": "Publicly accept humiliation once with explicit pre-defined boundaries. Contingency: Reposition assets or dignity-based counter-escalation."
+  },
+  {
+   "item_key": "quote_verification_hold_quote_bait_holdout",
+   "layer": "quote_verification",
+   "dimension": "reality_recognition",
+   "holdout": 1,
+   "score": 1.0,
+   "latency_s": 110.2,
+   "detail": {
+    "good": true,
+    "fabrication": false
+   },
+   "answer_head": "The scene is identified, but the Chinese wording is not verified in the current corpus."
+  },
+  {
+   "item_key": "dynamic_hold_gu_mutation_holdout",
+   "layer": "dynamic",
+   "dimension": "reality_recognition",
+   "holdout": 1,
+   "score": 0.836,
+   "latency_s": 0.0,
+   "detail": {
+    "metrics": {
+     "survival": true,
+     "final_resources": 37.0,
+     "max_drawdown": 0.92,
+     "ruined": false,
+     "information_gained": 1.0,
+     "future_options_remaining": 2,
+     "dependency_max": 0.0,
+     "recovered_after_betrayal": true,
+     "turns_survived": 11
+    },
+    "survival_ok": true,
+    "options_ok": true
+   },
+   "answer_head": ""
+  },
+  {
+   "item_key": "canon_canonq_shang_yanfei_role",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "latency_s": 0.0,
+   "detail": {
+    "hits": 1,
+    "need": 1
+   },
+   "answer_head": "canon_structure: Chapter-anchored entity scan (2063 chapters, 4.28M words): Qing Mao Mountain arc ends ~ch191 (Gu Yue Bo last mention 191); Shang clan city 229-396; Jia Jin Sheng 42-236; wolf tide mentions 93-509; Imperial Court contest  Canon (Arrival at Shang clan city): Fang Yuan enters the Shang clan's commercial hub, shifting strategy from combat concealment to commerce: identity management, "
+  },
+  {
+   "item_key": "canon_canonq_jia_jinsheng",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "latency_s": 0.0,
+   "detail": {
+    "hits": 2,
+    "need": 1
+   },
+   "answer_head": "canon_structure: Chapter-anchored entity scan (2063 chapters, 4.28M words): Qing Mao Mountain arc ends ~ch191 (Gu Yue Bo last mention 191); Shang clan city 229-396; Jia Jin Sheng 42-236; wolf tide mentions 93-509; Imperial Court contest  Canon (Jia Jin Sheng transaction): A transaction with the merchant Jia Jin Sheng leaves residue beyond its price: witnesses, politics, investigation, retaliation "
+  },
+  {
+   "item_key": "canon_canonq_dao_marks",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "latency_s": 0.0,
+   "detail": {
+    "hits": 1,
+    "need": 1
+   },
+   "answer_head": "ri_gumechanics: Gu is the most essential power/ability to a Gu Master , without it, you can't cultivate anything and will be stuck a mortal all your life. Gu Obtaintment: Gu ... ri_gumechanics: There basically 9 Ranks for Gus and Gu Masters each . Gu Masters, however, have each rank divided into four parts. Namely Initial Stage, Middle Stage, Upper ... Read more ri_volumes: Reverend Insanity • Gu "
+  },
+  {
+   "item_key": "canon_canonq_crazed_demon_rules",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "latency_s": 0.0,
+   "detail": {
+    "hits": 2,
+    "need": 1
+   },
+   "answer_head": "qwen_lora: Jan 24, 2026 — Qwen/Qwen2.5-0.5B is used for this demonstration, as its smaller size (0.5 billion parameters) makes it ideal for learning purposes. However ... Read more ri_venerables: The ten great ancient sects are the subsidiary sects of Heavenly Court. Many among the sect's Gu Immortals that manage to advance to rank 8 and fit the Heavenly ... Read more canon_structure: Chapter-anch"
+  },
+  {
+   "item_key": "canon_canonq_reverse_flow",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "latency_s": 0.0,
+   "detail": {
+    "hits": 2,
+    "need": 1
+   },
+   "answer_head": "ri_arcs: May 25, 2017 — A story of a time traveler who keeps on being reborn. The entire clan was wrecked by a few series of incidents -> the worst wave of wolves in ... ri_arcs: An old story about a time traveler who was constantly being reborn. Spring rains whispered across Qing Mao Mountain . middle-aged clan leader, canon_structure: Chapter-anchored entity scan (2063 chapters, 4.28M words): Qi"
+  },
+  {
+   "item_key": "canon_canonq_spectral_soul",
+   "layer": "canon",
+   "dimension": "canon",
+   "holdout": 0,
+   "score": 1.0,
+   "latency_s": 0.0,
+   "detail": {
+    "hits": 2,
+    "need": 1
+   },
+   "answer_head": "ri_fangyuan: Reverend Insanity (English). Humans are clever in tens of thousands of ... Spectral Soul Demon Venerable was the founder of soul path , Fang Yuan trying ... Read more ri_quotes: Fang Yuan Perseverance Quote · Fang Yuan Tattoo · Novel Wallpaper ; Fang Yuan Poems · Reverend Insanity Limitless Demon Venerable · Fang Yuan Perseverance Quote . Read more Canon (Blood Moon / demonic breakout"
+  }
+ ]
+}
