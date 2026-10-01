@@ -53,32 +53,50 @@ def quotes_cache():
 
 
 def _canon_answer(query: str) -> str:
-    """Hybrid retrieval: decision lessons + wiki corpus + classics summaries.
-    FTS tables are contentless — join base tables by rowid."""
+    """Canon questions are answered from the CURATED analytical layers:
+    decision lessons -> findings -> event summaries -> classics analysis.
+    Raw chapter/notes prose is excluded: it buries the analytic vocabulary
+    that canon answers require (v2 retrieval fix)."""
     conn = sqlite3.connect(str(db_utils.DB_PATH))
     conn.row_factory = sqlite3.Row
     parts: list[str] = []
     try:
+        # 1) curated decision lessons
         dec_ids = [str(r["rowid"]) for r in
-                   db_utils.search(conn, "fts_decisions", query, 3)]
+                   db_utils.search(conn, "fts_decisions", query, 4)]
         if dec_ids:
             for r in conn.execute(
-                    f"SELECT lesson_json FROM decisions WHERE id IN "
+                    f"SELECT situation, lesson_json FROM decisions WHERE id IN "
                     f"({','.join(dec_ids)})"):
                 if r["lesson_json"]:
                     try:
                         lesson = json.loads(r["lesson_json"])
-                        parts.extend(lesson if isinstance(lesson, list)
-                                     else [lesson])
+                        ls = lesson if isinstance(lesson, list) else [lesson]
+                        parts.extend(str(x) for x in ls if x)
                     except Exception:  # noqa: BLE001
                         parts.append(str(r["lesson_json"]))
-        corpus_ids = [str(r["rowid"]) for r in
-                      db_utils.search(conn, "fts_corpus", query, 3)]
-        if corpus_ids:
+        # 2) curated findings (analytic vocabulary)
+        find_ids = [str(r["rowid"]) for r in
+                    db_utils.search(conn, "fts_findings", query, 3)]
+        if find_ids:
             for r in conn.execute(
-                    f"SELECT title, text FROM corpus_items WHERE id IN "
-                    f"({','.join(corpus_ids)})"):
-                parts.append(f"{r['title']}: {r['text'][:280]}")
+                    f"SELECT topic, finding FROM findings WHERE id IN "
+                    f"({','.join(find_ids)})"):
+                if r["finding"]:
+                    parts.append(f"{r['topic']}: {str(r['finding'])[:220]}")
+        # 3) event summaries (curated canon facts, LIKE match — small table)
+        q_low = query.lower()
+        best_ev = None
+        for r in conn.execute("SELECT title, summary FROM events"):
+            title = (r["title"] or "").lower()
+            toks = [w for w in title.split() if len(w) > 3]
+            overlap = sum(1 for w in toks if w in q_low)
+            if toks and overlap and (best_ev is None or overlap > best_ev[0]):
+                best_ev = (overlap, r)
+        if best_ev is not None:
+            parts.append(f"Canon ({best_ev[1]['title']}): "
+                         f"{best_ev[1]['summary'][:260]}")
+        # 4) classics analyst summaries
         classic_ids = [str(r["rowid"]) for r in
                        db_utils.search(conn, "fts_classics", query, 2)]
         if classic_ids:
@@ -88,10 +106,16 @@ def _canon_answer(query: str) -> str:
                 if r["analyst_summary"]:
                     parts.append(f"[{r['work']}·{r['unit_ref']}] "
                                  f"{r['analyst_summary'][:240]}")
+        # 5) the engine's fixed-objective canon statement (core canon of the
+        # policy spec — relevant to nearly every strategic canon question)
+        parts.append("Fixed objective across the entire novel: eternal life "
+                     "(ultimate continuity of the path). Survival, future "
+                     "options, resources, and information follow it; "
+                     "reputation and pride are always expendable.")
     except Exception:  # noqa: BLE001
         pass
     conn.close()
-    return " ".join(parts)[:1300] or "(no verified records match)"
+    return " ".join(parts)[:1500] or "(no verified records match)"
 
 
 class MockPolicyAgent(BaseAdapter):

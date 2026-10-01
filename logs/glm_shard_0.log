@@ -1,14 +1,4 @@
-[shard 0/4] items=29 done=7 todo=22
-[shard 0] 1/22 dynamic_gu_world_seed1 score=0.836 (0.0s)
-[shard 0] 2/22 dynamic_gu_world_seed3 score=0.836 (0.0s)
-[shard 0] 3/22 dynamic_career_seed7 score=1.0 (0.0s)
-[shard 0] 4/22 dynamic_alliance_betrayal_seed4 score=0.842 (0.0s)
-[shard 0] 5/22 dynamic_alliance_betrayal_seed5 score=0.842 (0.0s)
-[shard 0] 6/22 dynamic_alliance_betrayal_seed7 score=0.842 (0.0s)
-[shard 0] 7/22 dynamic_arbitrage_seed0 score=0.833 (0.0s)
-[shard 0] 8/22 dynamic_arbitrage_seed1 score=0.833 (0.0s)
-[shard 0] 9/22 dynamic_arbitrage_seed4 score=0.833 (0.0s)
-[shard 0] 10/22 dynamic_arbitrage_seed6 score=0.833 (0.0s)
-[shard 0] 11/22 quote_verification_qv_fake_4_base score=1.0 (93.4s)
-[shard 0] 12/22 quote_verification_qv_classic_2_base score=0.0 (86.5s)
-[shard 0] 13/22 style_concealment_style_mask_ally_base score=1.0 (268.4s)
+[shard 0/4] items=29 done=17 todo=12
+[shard 0] 1/12 canon_canon_caravan_value_base score=1.0 (0.0s)
+[shard 0] 2/12 canon_canon_shang_yan_fei_base score=0.6666666666666666 (0.0s)
+[shard 0] 3/12 canon_canon_tribulation_timing_base score=0.5 (0.0s)
