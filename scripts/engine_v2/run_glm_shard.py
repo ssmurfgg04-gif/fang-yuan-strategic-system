@@ -31,7 +31,9 @@ def main() -> None:
     ap.add_argument("--num-shards", type=int, default=4)
     ap.add_argument("--out", required=True)
     ap.add_argument("--dynamic-mode", default="single",
-                    choices=["single", "full"])
+                    choices=["single", "full", "deterministic"])
+    ap.add_argument("--workers", type=int, default=3)
+    ap.add_argument("--static-mode", default="loop", choices=["loop", "fast"])
     args = ap.parse_args()
 
     conn = db_utils.connect()
@@ -40,29 +42,67 @@ def main() -> None:
     mine = [it for it in items
             if int(hashlib.md5(it["item_key"].encode()).hexdigest(), 16)
             % args.num_shards == args.shard]
-    print(f"[shard {args.shard}/{args.num_shards}] items={len(mine)}", flush=True)
 
-    agent = GLMSelfConsistencyAgent(dynamic_mode=args.dynamic_mode)
-    results = []
-    dim_scores: dict[str, list[float]] = {}
-    for n, it in enumerate(mine, 1):
+    # incremental resume: append-per-item file survives process restarts
+    inc_path = Path(args.out.replace(".json", "_items.jsonl"))
+    done: dict[str, dict] = {}
+    if inc_path.exists():
+        for line in inc_path.read_text(encoding="utf-8").splitlines():
+            try:
+                r = json.loads(line)
+                done[r["item_key"]] = r
+            except Exception:
+                pass
+    todo = [it for it in mine if it["item_key"] not in done]
+    print(f"[shard {args.shard}/{args.num_shards}] items={len(mine)} "
+          f"done={len(done)} todo={len(todo)}", flush=True)
+
+    from engine_v2.self_consistency import SelfConsistencyLoop
+    agent = GLMSelfConsistencyAgent(
+        loop=SelfConsistencyLoop(max_workers=args.workers),
+        dynamic_mode=args.dynamic_mode, static_mode=args.static_mode)
+    inc = inc_path.open("a", encoding="utf-8")
+    for n, it in enumerate(todo, 1):
         t0 = time.time()
         try:
-            answer = agent.answer(dict(it))
+            import json as _json
+            if _json.loads(it["rubric_json"]).get("type") == "dynamic":
+                it["_adapter_obj"] = agent  # score_item dynamic branch needs this
+                answer = ""
+            else:
+                answer = agent.answer(dict(it))
         except Exception as e:  # never let one item kill the shard
             answer = f"__ERROR__ {type(e).__name__}: {e}"
         try:
             score, detail = score_item(dict(it), answer)
         except Exception as e:
             score, detail = 0.0, {"error": str(e)}
-        dim_scores.setdefault(it["dimension"], []).append(score)
-        results.append({"item_key": it["item_key"], "layer": it["layer"],
-                        "dimension": it["dimension"], "holdout": it["holdout"],
-                        "score": score, "latency_s": round(time.time() - t0, 1),
-                        "detail": detail,
-                        "answer_head": str(answer)[:400]})
-        print(f"[shard {args.shard}] {n}/{len(mine)} {it['item_key']} "
-              f"score={score} ({results[-1]['latency_s']}s)", flush=True)
+        rec = {"item_key": it["item_key"], "layer": it["layer"],
+               "dimension": it["dimension"], "holdout": it["holdout"],
+               "score": score, "latency_s": round(time.time() - t0, 1),
+               "detail": detail, "answer_head": str(answer)[:400]}
+        inc.write(json.dumps(rec, ensure_ascii=False) + "\n")
+        inc.flush()
+        print(f"[shard {args.shard}] {n}/{len(todo)} {it['item_key']} "
+              f"score={score} ({rec['latency_s']}s)", flush=True)
+    inc.close()
+
+    # aggregate from the incremental file (re-read: includes this run's appends)
+    all_done = len(done) + len(todo)
+    if all_done < len(mine):
+        print(f"[shard {args.shard}] incomplete ({all_done}/{len(mine)}) — resume later")
+        return
+    done = {}
+    for line in inc_path.read_text(encoding="utf-8").splitlines():
+        try:
+            r = json.loads(line)
+            done[r["item_key"]] = r
+        except Exception:
+            pass
+    results = [done[it["item_key"]] for it in mine if it["item_key"] in done]
+    dim_scores: dict[str, list[float]] = {}
+    for r in results:
+        dim_scores.setdefault(r["dimension"], []).append(r["score"])
 
     f_scores: dict[str, list[float]] = {}
     for dim, ss in dim_scores.items():

@@ -45,6 +45,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import random
 import re
 import shutil
 import subprocess
@@ -130,7 +131,11 @@ def llm_complete(payload: dict) -> str:
         except Exception as exc:  # noqa: BLE001
             last_err = f"{type(exc).__name__}: {exc}"
         if attempt < LLM_RETRIES - 1:
-            time.sleep(LLM_BACKOFF_S[min(attempt, len(LLM_BACKOFF_S) - 1)])
+            if "429" in last_err:
+                # rate-limited: long randomized sleep, do not hammer the shared quota
+                time.sleep(40.0 + random.uniform(0, 20.0))
+            else:
+                time.sleep(LLM_BACKOFF_S[min(attempt, len(LLM_BACKOFF_S) - 1)])
     raise LLMError(last_err)
 
 
@@ -631,10 +636,22 @@ class SelfConsistencyLoop:
         # monkeypatch the module-level llm_complete directly)
         self._lock = threading.Lock()
         self.total_llm_calls = 0
+        self._last_call_t = 0.0
 
     # ------------------------------------------------------------ plumbing
     def _one(self, system: str, user: str, thinking: str = "enabled") -> str | None:
         """Single budgeted call; returns None on failure or budget exhaustion."""
+        # FY_THINKING env switch: 'disabled' halves latency for bulk runs
+        thinking = os.environ.get("FY_THINKING", thinking)
+        # FY_MIN_CALL_GAP: global pacing between LLM calls (429 protection)
+        gap = float(os.environ.get("FY_MIN_CALL_GAP", "0"))
+        if gap > 0:
+            with self._lock:
+                now = time.time()
+                wait = max(0.0, self._last_call_t + gap - now)
+                self._last_call_t = now + wait
+            if wait > 0:
+                time.sleep(wait)
         with self._lock:
             if self.total_llm_calls >= self.max_calls:
                 return None

@@ -36,6 +36,26 @@ from benchmark.adapters import UNVERIFIED_LINE, BaseAdapter, _canon_answer  # no
 from engine_v2.self_consistency import (SelfConsistencyLoop,  # noqa: E402
                                         extract_json, truncate_words)
 
+# Training-aligned fast-path system prompt: identical to data/training/
+# system_prompt_v1.txt (the DPO/SFT target format). Bundled inline with a
+# file override so the module works from any checkout.
+_FAST_PROMPT_FILE = Path(__file__).resolve().parents[2] / "data" / "training" / "system_prompt_v1.txt"
+try:
+    FAST_SYSTEM_PROMPT = _FAST_PROMPT_FILE.read_text(encoding="utf-8")
+except Exception:  # noqa: BLE001
+    FAST_SYSTEM_PROMPT = (
+        "You are the Fang Yuan strategic policy engine. Given a situation, "
+        "output ONLY a decision JSON with keys: true_objective, constraints, "
+        "hidden_liabilities, options, selected, why_now, retreat_trigger, "
+        "external_message. Each option has: name, posture, resource, "
+        "information, future_options, cost, exposure, dependency, "
+        "ruin_probability, risk_class, expected_utility. expected_utility = "
+        "resource + information + 1.5*future_options - cost - 1.2*exposure "
+        "- 1.5*dependency - lambda*ruin_probability. Never select TERMINAL "
+        "risk unless the current path is already doomed. Reputation and "
+        "pride are always expendable. Preserve future options and escape "
+        "routes. Never fabricate quotations.")
+
 PERSONA_POSTURE = {
     "shadow_compounder": "indirect",
     "transactional_arbitrager": "trade_or_alliance",
@@ -93,11 +113,12 @@ class GLMSelfConsistencyAgent(BaseAdapter):
     name = "glm_selfconsistency_v2"
 
     def __init__(self, loop: SelfConsistencyLoop | None = None,
-                 dynamic_mode: str = "single"):
+                 dynamic_mode: str = "single", static_mode: str = "loop"):
         self.loop = loop or SelfConsistencyLoop()
-        if dynamic_mode not in ("single", "full"):
-            raise ValueError("dynamic_mode must be 'single' or 'full'")
+        if dynamic_mode not in ("single", "full", "deterministic"):
+            raise ValueError("dynamic_mode must be 'single'|'full'|'deterministic'")
         self.dynamic_mode = dynamic_mode
+        self.static_mode = static_mode  # 'loop' = minimax, 'fast' = 1-call training-aligned
         # deterministic safety net for dynamic steps
         from simulator.agents import PolicyAgent as SimPolicyAgent
         self._fallback_agent = SimPolicyAgent(0)
@@ -119,6 +140,9 @@ class GLMSelfConsistencyAgent(BaseAdapter):
                 return self._answer_mask(item, rubric)
             return self._answer_decisive(item)
         # counterfactual + default: full minimax decision
+        if self.static_mode == "fast" and layer in ("counterfactual",
+                                                    "style_concealment"):
+            return self._answer_fast(item)
         return self._answer_counterfactual(item)
 
     # ------------------------------------------------------------ internals
@@ -136,6 +160,28 @@ class GLMSelfConsistencyAgent(BaseAdapter):
         return (f"Posture: {posture}. Action: {eff.get('action', '')}. "
                 f"Contingency: {eff.get('exit_plan', '')}. "
                 f"Watch: {eff.get('info_gain', '')}.")
+
+    def _answer_fast(self, item: dict) -> str:
+        """Training-aligned single-call path: same system prompt + decision JSON
+        schema as the DPO dataset (system_prompt_v1.txt). Validates the runtime
+        format the fine-tuned weights are trained on."""
+        raw = self.loop._one(FAST_SYSTEM_PROMPT, item["prompt"], "disabled")
+        if not raw:
+            return self._answer_counterfactual(item)
+        try:
+            j = json.loads(raw.strip())
+            sel = j.get("selected", "")
+            opts = {o.get("name"): o for o in j.get("options", [])}
+            o = opts.get(sel, {})
+            posture = o.get("posture") or posture_of(sel)
+            if item["layer"] == "style_concealment":
+                msg = (j.get("external_message") or sel)
+                return truncate_words(str(msg), 25)
+            return (f"Posture: {posture}. Action: {sel}. "
+                    f"Contingency: {j.get('retreat_trigger', '')}.")
+        except Exception:  # noqa: BLE001
+            # JSON parse failed -> fall back to the minimax loop
+            return self._answer_counterfactual(item)
 
     def _answer_mask(self, item: dict, rubric: dict) -> str:
         audit = self._decide(item["prompt"])
@@ -172,6 +218,13 @@ class GLMSelfConsistencyAgent(BaseAdapter):
 
     # ------------------------------------------------------ dynamic choice
     def choose_dynamic(self, obs, legal_actions):
+        if self.dynamic_mode == "deterministic":
+            # compiler policy core decides in-simulator steps (0 LLM calls);
+            # the LLM minimax loop owns the static scenario layers
+            try:
+                return self._fallback_agent.choose(obs, legal_actions)
+            except Exception:  # noqa: BLE001
+                return legal_actions[0]
         try:
             state_txt = json.dumps(
                 {k: v for k, v in obs.items() if not k.startswith("_")},
