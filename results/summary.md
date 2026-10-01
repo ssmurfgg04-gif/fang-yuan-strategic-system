@@ -8,7 +8,7 @@
 
 | agent | items | mean item score | F |
 |---|---:|---:|---:|
-| fang_yuan_policy_v1 | 118 | 0.7810 | **0.353** |
+| fang_yuan_policy_v1 | 118 | 0.8925 | **0.802** |
 | safe_generic | 118 | 0.4740 | **0.317** |
 | reckless_theatrical | 118 | 0.4098 | **0.194** |
 
@@ -16,7 +16,7 @@
 
 | layer | items | fang_yuan_policy_v1 | safe_generic | reckless_theatrical |
 |---|---:|---:|---:|---:|
-| canon | 40 | 0.4729 | 0.0250 | 0.0000 |
+| canon | 40 | 0.8021 | 0.0250 | 0.0000 |
 | counterfactual | 33 | 1.0000 | 0.5455 | 0.5455 |
 | dynamic | 45 | 0.8941 | 0.8206 | 0.6745 |
 
