@@ -13,7 +13,7 @@ strategic tradition, and a provenance-gated corpus pipeline.
 
 | Component | Path | What it does |
 |---|---|---|
-| **Master DB** | `db/fang_yuan.db` | Single compressed, queryable SQLite + FTS5: provenance-gated corpus, canon graph, 114 decision records, quote bank with verification discipline, 105 classics units, 43 lessons, 64 research findings, 110 benchmark items, all benchmark/simulator/test runs |
+| **Master DB** | `db/fang_yuan.db` (local, full) / `db/fang_yuan_public.db` (repo, bodies stripped) | Single compressed, queryable SQLite + FTS5: provenance-gated corpus, canon graph, 211 decision records (37 chapter-anchored), quote bank with verification discipline, 137 classics units (Sunzi 13 pian, Daodejing 81 chapters, Han Feizi 17 pian, Shiji biographies, Zhanguoce, Guiguzi, Shangjunshu), 62 lessons, 79 research findings, 140 benchmark items, all benchmark/simulator/test runs |
 | **Ingestion** | `scripts/ingest/` | Fandom wiki (CC BY-SA, attributed), Wikisource classics (PD), uploaded notes, **provenance-gated local corpus gate** |
 | **Policy engine** | `scripts/policy/` + `config/policy_spec.json` | Objective hierarchy, risk buckets, decision compiler with context-dynamic λ, audience-aware outer-speech formatter |
 | **Simulator** | `scripts/simulator/` | 5 environments (Gu world, industrial, career, alliance/betrayal, arbitrage) with hidden state, stochastic events, resource accounting, irreversible ruin |
@@ -88,7 +88,8 @@ and some continuation remains = the surgery worked.
 ## Results snapshot (this session)
 
 - 34/34 tests pass; all runs logged in `test_runs`.
-- Benchmark (110 items, 10 secret holdout): policy **0.625 / holdout 0.944**
+- **v2**: user's 4.28M-word novel corpus merged (2063 chapters, provenance-gated); entity-density scan grounded canon in measured chapter ranges (Shang city 229-396, Crazed Demon Cave 1173-2048...); GreenBamboo-v1 studied and surpassed (see `docs/GREENBAMBOO_COMPARISON.md`).
+- Benchmark (140 items, 10 secret holdout): policy **0.651 / holdout 0.944**
   vs safe-generic 0.325 vs theatrical-reckless 0.217.
 - Simulator (5 envs × 20 seeds): policy agent survives everywhere, keeps the
   most future options, never takes terminal risk for show.

@@ -47,7 +47,8 @@ def main() -> None:
     # decisions (3 parts)
     n_dec = 0
     for part in ("decisions_seed_part1.json", "decisions_seed_part2.json",
-                 "decisions_seed_part3.json"):
+                 "decisions_seed_part3.json", "decisions_seed_part4.json",
+                 "decisions_seed_part5.json", "decisions_seed_part6.json"):
         for d in load_json(part)["decisions"]:
             exists = conn.execute(
                 "SELECT 1 FROM decisions WHERE situation=? AND selected_action=?",

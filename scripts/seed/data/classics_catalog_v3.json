@@ -1,0 +1,94 @@
+{
+  "hanfeizi_v3": {
+    "work_key": "hanfeizi",
+    "units": [
+      {
+        "page": "韓非子/大體",
+        "ref": "大體",
+        "analyst_summary": "The ruler who holds the whole (大體) lets law be the mirror: 不躬不親，庶事敢陳 — do not micromanage; positions, names, and consequences do the governing. The sage-king seems idle because the system carries the load.",
+        "principles": [
+          "govern through structure, not personal intervention",
+          "a system that needs the ruler awake is a weak system",
+          "reserve personal action for the irreversible"
+        ],
+        "fang_yuan_anchor": "External-system doctrine: the 0.5B actor stays small because the surrounding system (DB, simulator, retriever) carries the load."
+      },
+      {
+        "page": "韓非子/觀行",
+        "ref": "觀行",
+        "analyst_summary": "Observe behavior, not claims: 古人所難者非一己之才能，乃知人之明. Use mirrors and levels (度量) to read others; self-knowledge requires the same instruments pointed inward.",
+        "principles": [
+          "behavior is the only testimony",
+          "measurement replaces intuition",
+          "turn the assessment tools on yourself"
+        ],
+        "fang_yuan_anchor": "Reality recognition: allies rated per data point (the commitment-failure lesson) and the benchmark-first philosophy applied to the model itself."
+      },
+      {
+        "page": "韓非子/用人",
+        "ref": "用人",
+        "analyst_summary": "Unnecessary punishments breed resentment; unpredictable rewards breed scheming. 用人: assign within capability, make consequences lawful and legible, and never let subordinates' duties outrun their information.",
+        "principles": [
+          "consequences must be legible to shape behavior",
+          "duties outrun information at your peril",
+          "match assignment to capability, not hope"
+        ],
+        "fang_yuan_anchor": "Delegation-by-failure-mode doctrine: execute-critical information rides with the task; identity information stays central."
+      },
+      {
+        "page": "韓非子/南面",
+        "ref": "南面",
+        "analyst_summary": "Rulers fail by loving tradition (法古) or by loving change for its own sake (變古); the test is results in the present. Supporters of the status quo and champions of novelty both argue feelings; the ruler argues outcomes.",
+        "principles": [
+          "arguments from tradition or novelty both dodge the outcome test",
+          "pilot, measure, then scale",
+          "yesterday's success is not evidence"
+        ],
+        "fang_yuan_anchor": "Iteration discipline: the simulator decides which methods survive — never tradition, never fashion."
+      },
+      {
+        "page": "韓非子/外儲說左上",
+        "ref": "外儲說左上",
+        "analyst_summary": "Case collection: the man waiting under the tree (守株待兔) mistakes one luck for a system; the painter who prefers ghosts over dogs (no one can verify ghosts); promises priced by their verifiability.",
+        "principles": [
+          "one success is an anecdote; systems repeat",
+          "prefer verifiable work to unfalsifiable display",
+          "promise exactly what can be checked"
+        ],
+        "fang_yuan_anchor": "Fake-quote discipline and the benchmark's anti-gaming design: unfalsifiable claims get flagged, verifiable records get trusted."
+      }
+    ]
+  },
+  "shiji_v3": {
+    "work_key": "shiji",
+    "units": [
+      {
+        "page": "史記/卷109",
+        "ref": "李將軍列傳",
+        "analyst_summary": "Li Guang: beloved general, superb personal warrior, chronically unlucky in system terms — no records discipline, no supply planning, inconsistent scouting. Sima Qian's sympathy cannot hide the lesson: courage without accounting loses to planning without flair (Wei Qing/Huo Qubing logistics).",
+        "principles": [
+          "charisma is not a supply chain",
+          "records and scouting are the boring decisive layer",
+          "personal bravery does not compound; preparation does"
+        ],
+        "fang_yuan_anchor": "The prepared-opportunist doctrine: Fang Yuan's legendary moves are the visible ends of long preparation chains."
+      }
+    ]
+  },
+  "zhanguoce_v3": {
+    "work_key": "zhanguoce",
+    "units": [
+      {
+        "page": "戰國策 (士禮居叢書本)/秦/三",
+        "ref": "秦策三",
+        "analyst_summary": "范雎說秦王: remote-claim jump strategy (遠交近攻) — ally the far, take the near; consolidated gains beat dispersed glory. Also the danger of speaking past the listener's fear and the patience of building credibility before the great proposal.",
+        "principles": [
+          "consolidate near gains before far adventures",
+          "sequence the map: who is reachable now",
+          "credibility is built in small hearings before the grand one"
+        ],
+        "fang_yuan_anchor": "Sequencing doctrine: Fang Yuan consolidates each region's gains before the next horizon (Shang city capital → Northern Plains position → Central Continent)."
+      }
+    ]
+  }
+}
