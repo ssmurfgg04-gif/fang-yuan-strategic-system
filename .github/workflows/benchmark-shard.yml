@@ -132,6 +132,9 @@ jobs:
           cat summary.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Push merged report to benchmark-results branch
+        # remove untracked generated files so the branch checkout cannot collide
+        run: rm -f results/merged_benchmark.json
+      - name: Push merged report
         env:
           SUMMARY_FILE: summary.md
         run: |
