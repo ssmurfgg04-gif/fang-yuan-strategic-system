@@ -1,0 +1,33 @@
+name: tests
+
+# Hermetic test suite: no network, no LLM. The master DB (db/fang_yuan.db)
+# is local-only (contains user-provided novel text), so CI materializes the
+# committed public variant at the path db_utils expects.
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pytest
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest
+
+      - name: Materialize DB (public variant -> expected path)
+        run: cp db/fang_yuan_public.db db/fang_yuan.db
+
+      - name: Run test suite
+        run: python -m pytest scripts/tests -q

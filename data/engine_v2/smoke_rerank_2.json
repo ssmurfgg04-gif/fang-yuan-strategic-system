@@ -1,0 +1,37 @@
+{
+  "scenario": "Your hidden cultivation progress may be exposed at an upcoming clan review",
+  "k": 3,
+  "sources": [
+    "decisions",
+    "classics"
+  ],
+  "results": [
+    {
+      "id": 134,
+      "source": "decisions",
+      "title_or_class": "mask",
+      "score": 9,
+      "reason": "Both conceal true nature during formal review through controlled exposure.",
+      "text_snippet": "His merchant mask's business has grown so visible that faction auditors demand a full books review. | objective: Survive the audit with the mask intact. | action taken: present realistic books with p…",
+      "bm25_rank": 0
+    },
+    {
+      "id": 3,
+      "source": "decisions",
+      "title_or_class": "major",
+      "score": 9,
+      "reason": "Both involve exposed cultivation leading to survival escape strategy.",
+      "text_snippet": "Demonic deeds are exposed; the clan and allied forces converge; combat is unwinnable at his rank. | objective: Survive and preserve the cultivation path. | action taken: convert the battle into an es…",
+      "bm25_rank": 1
+    },
+    {
+      "id": 1,
+      "source": "decisions",
+      "title_or_class": "major",
+      "score": 9,
+      "reason": "Both conceal cultivation while building advantage despite exposure risk.",
+      "text_snippet": "Awakening ceremony returns a C-grade aperture while the twin brother gets A-grade; all clan attention flows to the brother. | objective: Preserve concealment while building compounding advantage. | a…",
+      "bm25_rank": 2
+    }
+  ]
+}

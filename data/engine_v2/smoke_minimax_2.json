@@ -1,0 +1,173 @@
+{
+  "engine": "self_consistency_minimax_v2",
+  "scenario": "Your hidden cultivation progress may be exposed at an upcoming clan review",
+  "candidates": [
+    {
+      "gen": {
+        "name": "Shadowed Accumulation",
+        "action": "Donate valuable but common resources",
+        "resource_move": "Divert resources to secret cultivation",
+        "info_gain": "Observe clan members' reactions",
+        "concealment": "True cultivation level",
+        "dependency_created": "none",
+        "exit_plan": "Fabricate breakthrough story",
+        "time_horizon": "medium",
+        "persona": "shadow_compounder",
+        "fallback": false
+      },
+      "attack": {
+        "failure_mode": "Clan enforcers detect resource diversion through accounting discrepancies and initiate a soul-searching ritual",
+        "worst_case": "True cultivation level exposed, leading to immediate execution for deception with no chance to fabricate breakthrough story",
+        "probability": 0.75,
+        "survival_threatened": true,
+        "fallback": false
+      },
+      "refined": {
+        "name": "Shadowed Accumulation",
+        "action": "Donate valuable but common resources with legitimate accounting trails",
+        "resource_move": "Divert resources to secret cultivation through third-party intermediaries",
+        "info_gain": "Observe clan members' reactions and verify accounting oversight",
+        "concealment": "True cultivation level",
+        "dependency_created": "trusted intermediary",
+        "exit_plan": "Fabricate breakthrough story with corroborating evidence",
+        "time_horizon": "medium",
+        "mitigation": 0.6,
+        "patched_failure_mode": "Accounting discrepancies masked through legitimate trails and intermediaries"
+      },
+      "factors": {
+        "resource": 0.4,
+        "info": 0.55,
+        "optionality": 0.35,
+        "growth": 0.3,
+        "exposure": 0.2,
+        "dependency": 0.0
+      },
+      "effective_factors": {
+        "resource": 0.4,
+        "info": 0.75,
+        "optionality": 0.35,
+        "growth": 0.3,
+        "exposure": 0.2,
+        "dependency": 0.05
+      },
+      "u_pre": 3.9,
+      "u_worst_raw": -3.19,
+      "u_worst": 1.084,
+      "p_eff": 0.3,
+      "doomed": true
+    },
+    {
+      "gen": {
+        "name": "Information Obfuscation Through Controlled Disclosure",
+        "action": "Strategically leak cultivation evidence at varying levels to different factions",
+        "resource_move": "Divide cultivation resources into visible and hidden pools",
+        "info_gain": "Monitor reactions to gauge rival knowledge levels",
+        "concealment": "Keep actual core cultivation level completely masked",
+        "dependency_created": "none",
+        "exit_plan": "Deny all claims if exposed, shift blame to external sources",
+        "time_horizon": "medium",
+        "persona": "transactional_arbitrager",
+        "fallback": false
+      },
+      "attack": {
+        "failure_mode": "Controlled disclosure backfires when a rival faction discovers the pattern of intentional leaks, leading to them manipulating the information environment to expose the true cultivation level",
+        "worst_case": "A sophisticated rival faction orchestrates a cascade of false information that makes the agent's cultivation appear both higher and lower simultaneously, creating an information crisis that leads to a joint coalition of multiple factions attacking the agent under suspicion of hiding a breakthrough cultivation level, resulting in the complete destruction of the agent's resources and cultivation base",
+        "probability": 0.65,
+        "survival_threatened": true,
+        "fallback": false
+      },
+      "refined": {
+        "name": "Information Obfuscation Through Controlled Disclosure",
+        "action": "Strategically leak cultivation evidence at varying levels to different factions with embedded verification markers",
+        "resource_move": "Divide cultivation resources into visible and hidden pools, with decoy resources specifically designed to appear as leaks",
+        "info_gain": "Monitor reactions to gauge rival knowledge levels, cross-check against planted decoy information",
+        "concealment": "Keep actual core cultivation level completely masked, with multiple false cultivation signatures",
+        "dependency_created": "none",
+        "exit_plan": "Deny all claims if exposed, shift blame to external sources, reveal planted decoy evidence as proof of manipulation",
+        "time_horizon": "medium",
+        "mitigation": 0.75,
+        "patched_failure_mode": "Pattern recognition is mitigated by embedding verification markers in leaks and planting decoy information that appears authentic but can be disavowed if detected"
+      },
+      "factors": {
+        "resource": 0.53,
+        "info": 0.35,
+        "optionality": 0.35,
+        "growth": 0.3,
+        "exposure": 0.07,
+        "dependency": 0.0
+      },
+      "effective_factors": {
+        "resource": 0.53,
+        "info": 0.35,
+        "optionality": 0.35,
+        "growth": 0.3,
+        "exposure": 0.07,
+        "dependency": 0.0
+      },
+      "u_pre": 4.47,
+      "u_worst_raw": -1.848,
+      "u_worst": 2.8905,
+      "p_eff": 0.1625,
+      "doomed": true
+    },
+    {
+      "gen": {
+        "name": "Strategic Obfuscation",
+        "action": "Plant false cultivation trails",
+        "resource_move": "Divert resources to misdirection",
+        "info_gain": "Rival reconnaissance methods",
+        "concealment": "True cultivation progress",
+        "dependency_created": "none",
+        "exit_plan": "Blame external interference",
+        "time_horizon": "short",
+        "persona": "calculated_aggressor",
+        "fallback": false
+      },
+      "attack": {
+        "failure_mode": "False trails lead rival cultivators to your actual cultivation resources through reverse engineering",
+        "worst_case": "Rivals discover your true cultivation progress, steal your resources, and frame you for cultivation theft, leading to clan execution",
+        "probability": 0.7,
+        "survival_threatened": true,
+        "fallback": false
+      },
+      "refined": {
+        "name": "Strategic Obfuscation",
+        "action": "Plant false cultivation trails with decoy resources",
+        "resource_move": "Divert resources to misdirection with verification checkpoints",
+        "info_gain": "Rival reconnaissance methods and counter-intelligence",
+        "concealment": "True cultivation progress",
+        "dependency_created": "none",
+        "exit_plan": "Blame external interference with evidence trail",
+        "time_horizon": "short",
+        "mitigation": 0.8,
+        "patched_failure_mode": "Decoy resources and verification checkpoints prevent reverse engineering to true cultivation resources"
+      },
+      "factors": {
+        "resource": 0.4,
+        "info": 0.35,
+        "optionality": 0.35,
+        "growth": 0.2,
+        "exposure": 0.2,
+        "dependency": 0.0
+      },
+      "effective_factors": {
+        "resource": 0.4,
+        "info": 0.55,
+        "optionality": 0.35,
+        "growth": 0.2,
+        "exposure": 0.2,
+        "dependency": 0.0
+      },
+      "u_pre": 3.1,
+      "u_worst_raw": -3.624,
+      "u_worst": 2.3392,
+      "p_eff": 0.14,
+      "doomed": true
+    }
+  ],
+  "selected": 2,
+  "selection_note": "ALL candidates survival-threatened: least-doomed fallback (lowest effective threat probability), mirroring the compiler's doomed-path TERMINAL acceptance",
+  "rationale_2sentences": "Misdirection creates plausible deniability while maintaining cultivation integrity. External interference provides an escape route if exposure occurs.",
+  "external_message": "External forces seek to undermine our progress. We remain vigilant against false claims.",
+  "total_llm_calls": 10
+}

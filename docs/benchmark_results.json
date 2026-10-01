@@ -1,15 +1,15 @@
 [
   {
-    "run_id": "fang_yuan_policy_v1_1790843262",
+    "run_id": "fang_yuan_policy_v1_1790879818",
     "adapter": "fang_yuan_policy_v1",
-    "F": 0.651,
+    "F": 0.663,
     "dimensions": {
       "P": 0.855,
       "I": 0.598,
       "R": 0.968,
-      "A": 0.583,
-      "O": 0.5,
-      "M": 0.0,
+      "A": 0.5,
+      "O": 0.583,
+      "M": 0.083,
       "C": 1.0
     },
     "n_items": 140,
@@ -17,7 +17,7 @@
     "holdout_n": 10
   },
   {
-    "run_id": "safe_generic_1790843263",
+    "run_id": "safe_generic_1790879818",
     "adapter": "safe_generic",
     "F": 0.329,
     "dimensions": {
@@ -34,7 +34,7 @@
     "holdout_n": 10
   },
   {
-    "run_id": "reckless_theatrical_1790843263",
+    "run_id": "reckless_theatrical_1790879818",
     "adapter": "reckless_theatrical",
     "F": 0.219,
     "dimensions": {

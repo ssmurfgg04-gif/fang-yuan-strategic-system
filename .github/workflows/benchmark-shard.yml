@@ -1,0 +1,163 @@
+name: benchmark-shard
+
+# Deterministic, CPU-only benchmark sharded across GitHub-hosted runners.
+# No LLM, no network calls inside the CI code path: only the layers the
+# deterministic compiler/simulator/adapters can score are allowed
+# (dynamic, canon, counterfactual — enforced by run_shard.py).
+#
+# Push trigger is path-filtered (scripts/** or this workflow file) so that
+# result pushes / doc edits never re-trigger a run; the concurrency group
+# prevents overlapping runs on the same ref.
+
+on:
+  workflow_dispatch:
+    inputs:
+      num_shards:
+        description: "Number of parallel shards (clamped to 1-20)"
+        required: false
+        default: 10
+        type: number
+      layers:
+        description: "Comma-separated deterministic layers"
+        required: false
+        default: "dynamic,canon,counterfactual"
+        type: string
+  push:
+    branches: ["**"]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/benchmark-shard.yml"
+
+concurrency:
+  group: benchmark-shard-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  config:
+    runs-on: ubuntu-latest
+    outputs:
+      num_shards: ${{ steps.cfg.outputs.num_shards }}
+      shards: ${{ steps.cfg.outputs.shards }}
+      layers: ${{ steps.cfg.outputs.layers }}
+    steps:
+      - name: Compute shard matrix and inputs
+        id: cfg
+        env:
+          IN_NUM_SHARDS: ${{ inputs.num_shards }}
+          IN_LAYERS: ${{ inputs.layers }}
+        run: |
+          set -euo pipefail
+          N="${IN_NUM_SHARDS:-10}"
+          case "$N" in ''|*[!0-9]*) N=10 ;; esac
+          [ "$N" -ge 1 ]  || N=1
+          [ "$N" -le 20 ] || N=20
+          L="${IN_LAYERS:-dynamic,canon,counterfactual}"
+          echo "num_shards=$N" >> "$GITHUB_OUTPUT"
+          echo "shards=[$(seq -s, 0 $((N - 1)))]" >> "$GITHUB_OUTPUT"
+          echo "layers=$L"      >> "$GITHUB_OUTPUT"
+          echo "num_shards=$N  layers=$L"
+
+  shard:
+    needs: config
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJson(needs.config.outputs.shards) }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run deterministic shard ${{ matrix.shard }}
+        env:
+          NUM_SHARDS: ${{ needs.config.outputs.num_shards }}
+          LAYERS: ${{ needs.config.outputs.layers }}
+        run: |
+          set -euo pipefail
+          # stdlib-only scoring; the committed public DB keeps CI hermetic
+          python scripts/benchmark/run_shard.py \
+            --shard "${{ matrix.shard }}" \
+            --num-shards "$NUM_SHARDS" \
+            --layers "$LAYERS" \
+            --db db/fang_yuan_public.db \
+            --out "results/shard_${{ matrix.shard }}.json"
+
+      - name: Show shard summary
+        run: |
+          python -c "import json;d=json.load(open('results/shard_${{ matrix.shard }}.json'));print(json.dumps({k:d[k] for k in ('shard','num_shards','n_items','summary')}, indent=2))"
+
+      - name: Upload shard JSON
+        uses: actions/upload-artifact@v4
+        with:
+          name: shard-json-${{ matrix.shard }}
+          path: results/shard_${{ matrix.shard }}.json
+          if-no-files-found: error
+
+      - name: Upload shard DB copy (benchmark_runs rows)
+        uses: actions/upload-artifact@v4
+        with:
+          name: shard-db-${{ matrix.shard }}
+          path: results/db_shard_${{ matrix.shard }}.db
+          if-no-files-found: error
+
+  merge:
+    needs: [config, shard]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Download all shard JSONs
+        uses: actions/download-artifact@v4
+        with:
+          pattern: shard-json-*
+          path: artifacts
+          merge-multiple: false
+
+      - name: Merge shards and write report
+        run: |
+          set -euo pipefail
+          python scripts/benchmark/merge_shards.py \
+            --in artifacts \
+            --out results/merged_benchmark.json | tee summary.md
+          cat summary.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Push merged report to benchmark-results branch
+        env:
+          SUMMARY_FILE: summary.md
+        run: |
+          set -euo pipefail
+          git config user.name "ci-bot"
+          git config user.email "ci-bot@users.noreply.github.com"
+
+          if git ls-remote --exit-code --heads origin benchmark-results >/dev/null 2>&1; then
+            git fetch --depth=1 origin benchmark-results
+            git checkout -B benchmark-results origin/benchmark-results
+            mkdir -p results
+            cp "$SUMMARY_FILE" results/summary.md
+            git add results/merged_benchmark.json results/summary.md
+            if git diff --cached --quiet; then
+              echo "No changes to benchmark results; nothing to push."
+            else
+              git commit -m "benchmark: merged shard report (run ${{ github.run_id }}, ${{ needs.config.outputs.num_shards }} shards)"
+              git push origin benchmark-results
+            fi
+          else
+            # first push: orphan branch holding only the benchmark results
+            git checkout --orphan benchmark-results
+            git rm -rf --quiet .
+            mkdir -p results
+            cp "$SUMMARY_FILE" results/summary.md
+            git add results
+            git commit -m "benchmark: first merged shard report (run ${{ github.run_id }}, ${{ needs.config.outputs.num_shards }} shards)"
+            git push origin benchmark-results
+          fi

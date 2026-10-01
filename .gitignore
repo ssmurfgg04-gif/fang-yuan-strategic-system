@@ -29,3 +29,10 @@ Thumbs.db
 # master DB contains user-provided novel text — LOCAL ONLY; public variant is committed
 db/fang_yuan.db
 data/raw/search_r2_*.json
+
+# sharded-benchmark local outputs (db_shard_* copies contain master-DB novel text — NEVER commit)
+results/db_shard_*.db
+results/shard_*.json
+results/shard[0-9]*.json
+db/*.db-shm
+db/*.db-wal

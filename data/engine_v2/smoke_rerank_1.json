@@ -1,0 +1,37 @@
+{
+  "scenario": "A rival merchant offers an exclusive supply contract that would lock out all other suppliers but guarantee profit for a year",
+  "k": 3,
+  "sources": [
+    "decisions",
+    "classics"
+  ],
+  "results": [
+    {
+      "id": 156,
+      "source": "decisions",
+      "title_or_class": "tactical",
+      "score": 8,
+      "reason": "Both involve supplier competition and strategic response to rivals' moves",
+      "text_snippet": "A rival merchant copies his supply contracts almost exactly and undercuts by 5%. | objective: Respond without a price war. | action taken: hold price, quietly induce a stress event that breaks the co…",
+      "bm25_rank": 4
+    },
+    {
+      "id": 163,
+      "source": "decisions",
+      "title_or_class": "transaction",
+      "score": 7,
+      "reason": "Both involve exclusive supply contracts with minority investment strategy",
+      "text_snippet": "A collective of small craftsmen offers exclusive supply if he funds a guild charter. | objective: Decide the guild investment. | action taken: fund as minority with standards-authority and first-refu…",
+      "bm25_rank": 0
+    },
+    {
+      "id": 105,
+      "source": "decisions",
+      "title_or_class": "failure",
+      "score": 7,
+      "reason": "Exclusivity trap threat assessment pattern",
+      "text_snippet": "He dismissed a minor rival as irrelevant; the rival later sabotaged a critical supply line at the worst moment. | objective: Correct the threat-assessment model. | action taken: map all critical path…",
+      "bm25_rank": 1
+    }
+  ]
+}

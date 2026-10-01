@@ -1,0 +1,173 @@
+{
+  "engine": "self_consistency_minimax_v2",
+  "scenario": "A rival merchant offers an exclusive supply contract that would lock out all other suppliers but guarantee profit for a year",
+  "candidates": [
+    {
+      "gen": {
+        "name": "Shadow Acceptance",
+        "action": "Accept contract with hidden clauses",
+        "resource_move": "Divert resources to parallel ventures",
+        "info_gain": "Rival's desperation thresholds",
+        "concealment": "True production capabilities",
+        "dependency_created": "none",
+        "exit_plan": "Contractual escape clauses",
+        "time_horizon": "medium",
+        "persona": "shadow_compounder",
+        "fallback": false
+      },
+      "attack": {
+        "failure_mode": "Hidden clauses in contract contain exploitable liabilities that trigger when parallel ventures divert resources",
+        "worst_case": "Contract termination with penalties exceeding total assets, parallel ventures collapse due to insufficient resources, rival merchant acquires all remaining assets at bankruptcy auction",
+        "probability": 0.85,
+        "survival_threatened": true,
+        "fallback": false
+      },
+      "refined": {
+        "name": "Shadow Acceptance",
+        "action": "Accept contract with verification and staged implementation",
+        "resource_move": "Divert resources to parallel ventures after verification",
+        "info_gain": "Rival's desperation thresholds and contract liability triggers",
+        "concealment": "True production capabilities",
+        "dependency_created": "none",
+        "exit_plan": "Contractual escape clauses and liability thresholds",
+        "time_horizon": "medium",
+        "mitigation": 0.7,
+        "patched_failure_mode": "Verify contract clauses for resource diversion triggers before implementation"
+      },
+      "factors": {
+        "resource": 0.4,
+        "info": 0.35,
+        "optionality": 0.35,
+        "growth": 0.3,
+        "exposure": 0.2,
+        "dependency": 0.0
+      },
+      "effective_factors": {
+        "resource": 0.4,
+        "info": 0.35,
+        "optionality": 0.52,
+        "growth": 0.3,
+        "exposure": 0.2,
+        "dependency": 0.0
+      },
+      "u_pre": 3.3,
+      "u_worst_raw": -6.1,
+      "u_worst": -0.78,
+      "p_eff": 0.255,
+      "doomed": true
+    },
+    {
+      "gen": {
+        "name": "Controlled Monopoly",
+        "action": "Negotiate with contingency clauses",
+        "resource_move": "Diversify capital reserves",
+        "info_gain": "Market reaction exclusivity",
+        "concealment": "Alternative supply channels",
+        "dependency_created": "Limited",
+        "exit_plan": "Penalty-triggered renegotiation",
+        "time_horizon": "Medium",
+        "persona": "transactional_arbitrager",
+        "fallback": false
+      },
+      "attack": {
+        "failure_mode": "Contingency clauses are exploited through legal loopholes, triggering maximum penalties while simultaneously revealing alternative supply channels to the rival merchant",
+        "worst_case": "The rival merchant uses the renegotiation penalty to drain capital reserves while simultaneously cutting off alternative supply channels, creating a supply crisis that destroys market position and triggers cascading business failures",
+        "probability": 0.75,
+        "survival_threatened": true,
+        "fallback": false
+      },
+      "refined": {
+        "name": "Controlled Monopoly",
+        "action": "Staged negotiation with verification clauses",
+        "resource_move": "Diversify capital reserves with penalty buffer",
+        "info_gain": "Market reaction exclusivity",
+        "concealment": "Shadow alternative supply channels",
+        "dependency_created": "Limited",
+        "exit_plan": "Time-limited automatic renegotiation triggers",
+        "time_horizon": "Medium",
+        "mitigation": 0.6,
+        "patched_failure_mode": "Contingency clauses now include independent verification requirements and time-limited renegotiation triggers that prevent penalty exploitation"
+      },
+      "factors": {
+        "resource": 0.66,
+        "info": 0.35,
+        "optionality": 0.52,
+        "growth": 0.3,
+        "exposure": 0.2,
+        "dependency": 0.05
+      },
+      "effective_factors": {
+        "resource": 0.66,
+        "info": 0.35,
+        "optionality": 0.52,
+        "growth": 0.3,
+        "exposure": 0.2,
+        "dependency": 0.05
+      },
+      "u_pre": 4.35,
+      "u_worst_raw": -8.25,
+      "u_worst": -1.95,
+      "p_eff": 0.3,
+      "doomed": true
+    },
+    {
+      "gen": {
+        "name": "Controlled Dominance",
+        "action": "Counteroffer with exclusivity terms favoring us",
+        "resource_move": "Reserve capital for alternative suppliers",
+        "info_gain": "Rival's desperation threshold and fallback options",
+        "concealment": "Our alternative supply pipeline strength",
+        "dependency_created": "none",
+        "exit_plan": "Trigger renegotiation clauses if terms turn unfavorable",
+        "time_horizon": "medium",
+        "persona": "calculated_aggressor",
+        "fallback": false
+      },
+      "attack": {
+        "failure_mode": "Rival's exclusivity contract contains hidden penalties that trigger only after initial commitment, creating dependency while draining capital",
+        "worst_case": "Capital reserved for alternatives becomes inaccessible due to contract clauses, alternative suppliers collapse due to sabotage, and the contract's renegotiation clauses prove unenforceable, resulting in total operational dependency on the hostile rival",
+        "probability": 0.7,
+        "survival_threatened": true,
+        "fallback": false
+      },
+      "refined": {
+        "name": "Controlled Dominance",
+        "action": "Counteroffer with staged exclusivity terms and penalty verification",
+        "resource_move": "Reserve capital for alternative suppliers with immediate access triggers",
+        "info_gain": "Rival's desperation threshold, fallback options, and hidden penalty clauses",
+        "concealment": "Our alternative supply pipeline strength and contractual escape mechanisms",
+        "dependency_created": "none",
+        "exit_plan": "Trigger renegotiation clauses if terms turn unfavorable, with automatic fallback to alternatives upon penalty detection",
+        "time_horizon": "medium",
+        "mitigation": 0.8,
+        "patched_failure_mode": "Hidden penalties are now identified through third-party contract review before commitment, and staged exclusivity prevents full dependency until verification"
+      },
+      "factors": {
+        "resource": 0.4,
+        "info": 0.35,
+        "optionality": 0.35,
+        "growth": 0.3,
+        "exposure": 0.2,
+        "dependency": 0.0
+      },
+      "effective_factors": {
+        "resource": 0.4,
+        "info": 0.35,
+        "optionality": 0.86,
+        "growth": 0.3,
+        "exposure": 0.2,
+        "dependency": 0.0
+      },
+      "u_pre": 3.3,
+      "u_worst_raw": -9.4,
+      "u_worst": 1.47,
+      "p_eff": 0.14,
+      "doomed": true
+    }
+  ],
+  "selected": 2,
+  "selection_note": "ALL candidates survival-threatened: least-doomed fallback (lowest effective threat probability), mirroring the compiler's doomed-path TERMINAL acceptance",
+  "rationale_2sentences": "Our counteroffer establishes leverage while maintaining fallback options. The reserved capital ensures operational flexibility if initial terms prove unfavorable.",
+  "external_message": "Exploring mutually beneficial terms that ensure stability for all parties.",
+  "total_llm_calls": 10
+}
