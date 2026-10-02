@@ -73,3 +73,23 @@ this phase targeted the decision engine and the weights.
   resumable sharded GLM benchmark runner (429-aware pacing)
 - `.github/workflows/` — 10-runner sharded deterministic benchmark (GREEN),
   tests CI (82/82 GREEN)
+
+## Iteration history (closed-loop: dataset -> Kaggle GPU -> 140-item benchmark)
+
+| Iter | F | cf | style | quote | dynamic | holdout | Change |
+|---|---|---|---|---|---|---|---|
+| v1 | **0.614** | 0.564 | 0.345 | 0.364 | **0.894** | 0.664 | baseline SFT->DPO |
+| v2 | 0.584 | 0.012 | 0.527 | 0.545 | 0.894 | 0.684 | +40 plain-text mask pairs -> cf collapsed (representation bleed) |
+| v3 | 0.577 | 0.515 | 0.345 | 0.364 | 0.709 | 0.537 | mask pairs re-encoded in JSON schema -> cf recovered, style regressed |
+| v4 | 0.608 | **0.582** | 0.455 | 0.273 | 0.690 | 0.488 | balanced quote mass + 1 DPO epoch -> **C=1.0**, best cf |
+
+**Conclusion**: single-adapter 0.5B ceiling ~F 0.61 with capability-interference
+oscillation (each iteration improves one layer at another's expense). v1
+remains the champion System-1 core (dynamic 0.894 = oracle level). The
+concealment dimension is SOLVABLE in weights (C=1.0 in v4). Next levers, in
+expected-value order: (1) per-capability LoRA routing (adapters per layer,
+selected by item class — no interference), (2) 2-3x pair mass per capability,
+(3) route style/quote/concealment to the GLM engine (already 1.0/0.545).
+
+The GLM engine v2 (F=0.829 partial) + v1 System-1 core = the recommended
+production two-tier configuration.
