@@ -1,5 +1,5 @@
 {
-  "run_id": "glm_selfconsistency_v2_1790893746",
+  "run_id": "glm_selfconsistency_v2_1790902913",
   "adapter": "glm_selfconsistency_v2",
   "F": 0.829,
   "dimensions": {
@@ -23,5 +23,5 @@
   "holdout_mean": 0.918,
   "holdout_n": 2,
   "nonholdout_mean": 0.751,
-  "timestamp": "2026-10-01T22:29:06+00:00"
+  "timestamp": "2026-10-02T01:01:53+00:00"
 }

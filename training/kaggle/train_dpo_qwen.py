@@ -37,7 +37,7 @@ BETA = 0.1
 LR_SFT = 2e-4
 LR_DPO = 5e-5
 EPOCHS_SFT = 3
-EPOCHS_DPO = 2
+EPOCHS_DPO = 1
 SEED = 20260101
 
 random.seed(SEED)

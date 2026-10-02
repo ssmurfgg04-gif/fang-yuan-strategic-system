@@ -8,19 +8,19 @@
     "4.0": "default"
   },
   "decision_records_used": 211,
-  "dpo_total": 533,
+  "dpo_total": 553,
   "dpo_by_type": {
     "chosen_vs_safe_moral": 211,
     "chosen_vs_reckless": 211,
     "cf_adaptation_vs_recitation": 30,
-    "quote_discipline": 19,
+    "quote_discipline": 39,
     "canon_vs_inference": 22,
     "mask_concealment": 40
   },
   "dpo_split": {
-    "train": 476,
-    "val": 57
+    "train": 493,
+    "val": 60
   },
-  "sft_total": 322,
+  "sft_total": 342,
   "holdout_excluded": 10
 }
