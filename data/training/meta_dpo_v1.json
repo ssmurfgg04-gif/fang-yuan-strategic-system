@@ -18,8 +18,8 @@
     "mask_concealment": 40
   },
   "dpo_split": {
-    "train": 477,
-    "val": 56
+    "train": 476,
+    "val": 57
   },
   "sft_total": 322,
   "holdout_excluded": 10

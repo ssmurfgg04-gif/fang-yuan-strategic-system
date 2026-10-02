@@ -361,7 +361,7 @@ def main():
             prompt = chat_ids(tok, msgs, add_generation_prompt=True)
             ids = torch.tensor([prompt], device=DEV)
             with torch.autocast("cuda", dtype=torch.float16, enabled=AMP):
-                out = model.generate(ids, max_new_tokens=480, do_sample=False,
+                out = model.generate(ids, max_new_tokens=900, do_sample=False,
                                      pad_token_id=tok.pad_token_id)
             text = tok.decode(out[0][len(prompt):], skip_special_tokens=True)
             total += 1

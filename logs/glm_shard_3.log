@@ -1,4 +1,1 @@
-[shard 3/4] items=42 done=18 todo=24
-[shard 3] 1/24 quote_verification_qv_classic_1_base score=0.0 (101.8s)
-[shard 3] 2/24 quote_verification_qv_classic_4_base score=0.0 (106.2s)
-[shard 3] 3/24 quote_verification_qv_classic_5_base score=0.0 (92.1s)
+[shard 3/4] items=42 done=21 todo=21
