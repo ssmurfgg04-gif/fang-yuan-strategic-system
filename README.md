@@ -17,10 +17,32 @@ strategic tradition, and a provenance-gated corpus pipeline.
 | **Ingestion** | `scripts/ingest/` | Fandom wiki (CC BY-SA, attributed), Wikisource classics (PD), uploaded notes, **provenance-gated local corpus gate** |
 | **Policy engine** | `scripts/policy/` + `config/policy_spec.json` | Objective hierarchy, risk buckets, decision compiler with context-dynamic λ, audience-aware outer-speech formatter |
 | **Simulator** | `scripts/simulator/` | 5 environments (Gu world, industrial, career, alliance/betrayal, arbitrage) with hidden state, stochastic events, resource accounting, irreversible ruin |
-| **Benchmark** | `scripts/benchmark/` | 110-item Fang Yuan Fidelity Benchmark (canon / counterfactual / dynamic / quote-verification / style-concealment), 7-dimension scoring, adapter system incl. llama.cpp for Qwen2.5-0.5B |
+| **Benchmark** | `scripts/benchmark/` | 140-item Fang Yuan Fidelity Benchmark (canon / counterfactual / dynamic / quote-verification / style-concealment), 7-dimension scoring, adapter system incl. llama.cpp/vLLM for fine-tuned models |
 | **Search** | `scripts/search/` | Beam+rollout over actions (never over prose) with numeric evaluator |
-| **Training** | `scripts/training/` + `docs/TRAINING_PLAN.md` | SFT / preference-pair / fake_fang_yuan / quote-verification dataset builders + QLoRA runbook |
+| **Training** | `scripts/training/` + `docs/RUNBOOK.md` | **542 DPO triples** (`dpo_pairs.jsonl`, task-tagged, double negatives) + SFT/preference/negative dataset builders + universal 0.5B→12B QLoRA/DPO trainer (`train_dpo.py`) + one-click Kaggle notebook (`notebooks/fangyuan_train_any_size.ipynb`) |
 | **Tests** | `scripts/tests/` | 34 tests across all subsystems (results logged into the DB) |
+
+## v2.0-baseline — train any size model to this level
+
+The corpus is **frozen**; capability now comes from weight alignment, not
+more ingestion. One dataset, one trainer, any base model:
+
+```bash
+# 0.5B on a free Kaggle T4 (minutes) — or any GPU box:
+python scripts/training/train_dpo.py --base Qwen/Qwen2.5-0.5B-Instruct --out runs/fy-0.5b --merge
+# 3B / 7B / 12B: same command, presets auto-switch (4-bit, rank, batch)
+python scripts/training/train_dpo.py --base Qwen/Qwen2.5-7B-Instruct --out runs/fy-7b --merge
+# Multi-LoRA specialists (route at inference):
+python scripts/training/train_dpo.py --base Qwen/Qwen2.5-3B-Instruct --task-filter concealment --stage dpo --out runs/fy-3b-concealment
+```
+
+Zero-setup path: import `notebooks/fangyuan_train_any_size.ipynb` into
+Kaggle (GPU T4 x2, Internet ON), edit `MODEL`, Run All — it trains, merges,
+smoke-tests and packages the model for upload.
+
+Full guide — acceptance bar, per-size hyperparameters, Multi-LoRA/MoE
+routing, GGUF serving, benchmark verification, model upload paths:
+**[docs/RUNBOOK.md](docs/RUNBOOK.md)**.
 
 ## Quick start
 
@@ -97,7 +119,7 @@ and some continuation remains = the surgery worked.
   drawdown 0.12, refuses exclusivity; reckless 60.0 + exclusivity leash;
   safe 40.0.
 
-Details: `docs/FINDINGS.md`, `docs/TRAINING_PLAN.md`,
+Details: `docs/FINDINGS.md`, `docs/RUNBOOK.md`, `docs/TRAINING_PLAN.md`,
 `docs/benchmark_results.json`, `docs/broken_formation_demo.json`.
 
 ## License / attribution
