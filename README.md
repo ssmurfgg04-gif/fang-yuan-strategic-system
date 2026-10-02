@@ -17,28 +17,44 @@ strategic tradition, and a provenance-gated corpus pipeline.
 | **Ingestion** | `scripts/ingest/` | Fandom wiki (CC BY-SA, attributed), Wikisource classics (PD), uploaded notes, **provenance-gated local corpus gate** |
 | **Policy engine** | `scripts/policy/` + `config/policy_spec.json` | Objective hierarchy, risk buckets, decision compiler with context-dynamic λ, audience-aware outer-speech formatter |
 | **Simulator** | `scripts/simulator/` | 5 environments (Gu world, industrial, career, alliance/betrayal, arbitrage) with hidden state, stochastic events, resource accounting, irreversible ruin |
-| **Benchmark** | `scripts/benchmark/` | 140-item Fang Yuan Fidelity Benchmark (canon / counterfactual / dynamic / quote-verification / style-concealment), 7-dimension scoring, adapter system incl. llama.cpp/vLLM for fine-tuned models |
+| **Benchmark** | `scripts/benchmark/` + `scripts/engine_v2/` | 140-item Fang Yuan Fidelity Benchmark (7 dimensions, 10 secret holdout), adapter system incl. llama.cpp/vLLM; **engine v2**: two-stage retrieval + cross-reranker (top-3 injection) + self-consistency minimax loop |
 | **Search** | `scripts/search/` | Beam+rollout over actions (never over prose) with numeric evaluator |
-| **Training** | `scripts/training/` + `docs/RUNBOOK.md` | **542 DPO triples** (`dpo_pairs.jsonl`, task-tagged, double negatives) + SFT/preference/negative dataset builders + universal 0.5B→12B QLoRA/DPO trainer (`train_dpo.py`) + one-click Kaggle notebook (`notebooks/fangyuan_train_any_size.ipynb`) |
-| **Tests** | `scripts/tests/` | 34 tests across all subsystems (results logged into the DB) |
+| **Training** | `scripts/training/`, `training/kaggle/` + `docs/RUNBOOK.md` | Two DPO datasets (proven 553-pair `dpo_pairs_v1.jsonl`; task-tagged 542-triple `dpo_pairs.jsonl` for Multi-LoRA) + universal 0.5B→12B trainer (`train_dpo.py`) + proven Kaggle kernel (`training/kaggle/train_dpo_qwen.py`) + one-click notebook |
+| **Tests** | `scripts/tests/` | 82 tests across all subsystems (results logged into the DB) |
 
-## v2.0-baseline — train any size model to this level
+## v2.0-baseline — the measured ladder & how to train any size model to it
 
-The corpus is **frozen**; capability now comes from weight alignment, not
-more ingestion. One dataset, one trainer, any base model:
+Corpus **frozen** (211 decisions / 137 classics / 140 benchmark items).
+Capability comes from weight alignment, not more ingestion. The closed-loop
+iterations (dataset → Kaggle GPU → 140-item benchmark) measured:
+
+| Tier | F | What it proves |
+|---|---|---|
+| Reckless caricature | 0.219 | floor |
+| Safe caricature | 0.329 | the assistant default we fight |
+| **Fine-tuned Qwen2.5-0.5B (v1)** | **0.614** | DPO works: dynamic layer 0.894 = oracle level; utility formula embodied in weights |
+| Deterministic policy oracle | 0.651 | the training-signal generator |
+| **GLM engine v2 (System-2)** | **0.829** (partial) | rerank top-3 + minimax self-consistency |
+
+Single-adapter 0.5B ceiling ≈ **0.61** with capability-interference
+oscillation (v2→v4: cf ↔ style ↔ quote seesaw). Documented next levers:
+**per-capability LoRA routing** and **bigger bases** — both one command away:
 
 ```bash
-# 0.5B on a free Kaggle T4 (minutes) — or any GPU box:
+# 0.5B: reproduce the champion (minutes on a free Kaggle T4)
 python scripts/training/train_dpo.py --base Qwen/Qwen2.5-0.5B-Instruct --out runs/fy-0.5b --merge
 # 3B / 7B / 12B: same command, presets auto-switch (4-bit, rank, batch)
 python scripts/training/train_dpo.py --base Qwen/Qwen2.5-7B-Instruct --out runs/fy-7b --merge
-# Multi-LoRA specialists (route at inference):
-python scripts/training/train_dpo.py --base Qwen/Qwen2.5-3B-Instruct --task-filter concealment --stage dpo --out runs/fy-3b-concealment
+# Multi-LoRA specialists from the task-tagged dataset, routed at inference:
+python scripts/training/train_dpo.py --base Qwen/Qwen2.5-3B-Instruct \
+    --data data/training/dpo_pairs.jsonl --task-filter concealment \
+    --stage dpo --out runs/fy-3b-concealment
 ```
 
 Zero-setup path: import `notebooks/fangyuan_train_any_size.ipynb` into
 Kaggle (GPU T4 x2, Internet ON), edit `MODEL`, Run All — it trains, merges,
-smoke-tests and packages the model for upload.
+smoke-tests and packages the model for upload. Proven-kernel path:
+`kaggle kernels push -p training/kaggle`.
 
 Full guide — acceptance bar, per-size hyperparameters, Multi-LoRA/MoE
 routing, GGUF serving, benchmark verification, model upload paths:

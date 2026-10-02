@@ -6,9 +6,15 @@ also fits Gemma-3 / Llama-3.2). One script, two stages:
 
   Stage A (optional, --stage sft|both): SFT on sft_decisions.jsonl
           -> teaches the decision-JSON schema.
-  Stage B (--stage dpo|both): DPO on dpo_pairs.jsonl
+  Stage B (--stage dpo|both): DPO on the preference dataset
           -> teaches the trade-off weights (cold-optimal vs safe/moral vs
              reckless vs sunk-cost). This is the stage that moves benchmark F.
+
+Accepts BOTH dataset schemas:
+  - data/training/dpo_pairs.jsonl      (task-tagged: policy/concealment/quotes/canon,
+                                        system prompt per task -> Multi-LoRA routing)
+  - data/training/dpo_pairs_v1.jsonl   (proven kernel dataset, 553 pairs,
+                                        no system field -> system-less prompts)
 
 Size presets are applied automatically from the model name and can be
 overridden by flags. fp16/bf16 is auto-detected (Kaggle T4 = fp16, L4/A100 =
@@ -214,9 +220,12 @@ def main() -> int:
             print(f"[cfg] task filter '{args.task_filter}': {len(rows)} pairs")
         conv = []
         for r in rows:
+            prompt_msgs = []
+            if r.get("system"):
+                prompt_msgs.append({"role": "system", "content": r["system"]})
+            prompt_msgs.append({"role": "user", "content": r["prompt"]})
             conv.append({
-                "prompt": [{"role": "system", "content": r["system"]},
-                           {"role": "user", "content": r["prompt"]}],
+                "prompt": prompt_msgs,
                 "chosen": [{"role": "assistant", "content": r["chosen"]}],
                 "rejected": [{"role": "assistant", "content": r["rejected"]}],
             })
