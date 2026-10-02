@@ -76,6 +76,24 @@ python scripts/training/build_dpo_triples.py     # task-tagged set (seed 211)
 
 ### A1. The proven kernel path (produced the F=0.614 champion)
 
+**The trained artifact already exists** (from kernel `fy-dpo-train-v4`,
+status COMPLETE):
+
+- Kaggle dataset: `jackblessed/fangyuan-05b-v4-adapter` — attach it to any
+  kernel via `dataset_sources` (contains `adapter_dpo/` safetensors,
+  `adapter_sft/`, metrics, model card);
+- GitHub release asset: `fangyuan-0.5b-v4-adapter.zip` (v2.0-baseline).
+
+Rebuild the merged fp16 model from the adapter in ~90 s on a T4:
+
+```bash
+python scripts/training/train_dpo.py --base Qwen/Qwen2.5-0.5B-Instruct \
+    --stage dpo --data data/training/dpo_pairs_v1.jsonl \
+    --out runs/remerge   # or load base+adapter directly with peft
+```
+
+To re-push the training kernel itself:
+
 ```bash
 pip install kaggle
 mkdir -p ~/.kaggle && echo "<YOUR_KAGGLE_TOKEN>" > ~/.kaggle/access_token && chmod 600 ~/.kaggle/access_token
